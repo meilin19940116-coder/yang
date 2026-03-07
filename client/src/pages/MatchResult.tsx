@@ -65,6 +65,8 @@ export default function MatchResult() {
     return { persona: randomPersona, targetNumber: selectedNumber };
   }, []);
 
+  const waLink = targetNumber ? `https://wa.me/${targetNumber}?text=Hello` : '';
+  
   // --- 复制功能 ---
   const handleCopy = () => {
     const textToCopy = `+${targetNumber}`;
