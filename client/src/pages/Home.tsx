@@ -41,7 +41,7 @@ export default function Home() {
   const allSuccessStories = [
     { id: 1, img: "/images/success-1.jpg", quote: t.successStories?.story1Quote, name: t.successStories?.story1Name, role: t.successStories?.story1Title },
     { id: 2, img: "/images/success-2.jpg", quote: t.successStories?.story2Quote, name: t.successStories?.story2Name, role: t.successStories?.story2Title },
-    { id: 3, img: "/images/success-3.jpeg", quote: t.successStories?.story3Quote, name: t.successStories?.story3Name, role: t.successStories?.story3Title },
+    { id: 3, img: "/images/success-3.jpg", quote: t.successStories?.story3Quote, name: t.successStories?.story3Name, role: t.successStories?.story3Title },
     { id: 4, img: "/images/success-4.jpg", quote: t.successStories?.story4Quote, name: t.successStories?.story4Name, role: t.successStories?.story4Title },
     { id: 5, img: "/images/success-5.jpg", quote: t.successStories?.story5Quote, name: t.successStories?.story5Name, role: t.successStories?.story5Title },
     { id: 6, img: "/images/success-6.jpg", quote: t.successStories?.story6Quote, name: t.successStories?.story6Name, role: t.successStories?.story6Title },
