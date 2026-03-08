@@ -305,7 +305,7 @@ export default function Home() {
                     
                     <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-full text-[11px] font-bold text-white/90 border border-white/20 flex items-center gap-1.5 shadow-lg tracking-wider z-20">
                       <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> 
-                      Privacy Protected
+                      {t.successStories.privacyProtected}
                     </div>
                   </div>
                   
