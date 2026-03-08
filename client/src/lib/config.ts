@@ -49,7 +49,16 @@ export const personaPool = [
     },
     tags: {
       en: ["Ambitious", "Elegant", "Thoughtful", "Discerning"],
-      zh: ["充满野心", "优雅迷人", "体贴周到", "品味不凡"]
+      zh: ["充满野心", "优雅迷人", "体贴周到", "品味不凡"],
+      es: ["Ambiciosa", "Elegante", "Atenta", "Perspicaz"],
+      pt: ["Ambiciosa", "Elegante", "Atenciosa", "Perspicaz"],
+      ja: ["野心的", "エレガント", "思いやりがある", "目の肥えた"],
+      ko: ["야심 찬", "우아한", "사려 깊은", "안목 있는"],
+      fr: ["Ambitieuse", "Élégante", "Attentionnée", "Perspicace"],
+      de: ["Ehrgeizig", "Elegant", "Aufmerksam", "Anspruchsvoll"],
+      it: ["Ambiziosa", "Elegante", "Premurosa", "Esigente"],
+      ru: ["Амбициозная", "Элегантная", "Внимательная", "Разборчивая"],
+      ar: ["طموحة", "أنيقة", "مراعية", "ذواقة"]
     },
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg"],
     // 专属号码池
