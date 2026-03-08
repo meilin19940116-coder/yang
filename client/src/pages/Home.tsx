@@ -5,10 +5,10 @@
  * 3. 【完整保留】Hero z-30 层级修复、汉堡菜单、多语言等所有原有代码。
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Globe, Menu, X } from 'lucide-react'; 
+import { Globe, Menu, X, ShieldCheck } from 'lucide-react'; 
 import {
   Select,
   SelectContent,
@@ -36,6 +36,29 @@ export default function Home() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
   const [termsOpen, setTermsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
+
+  // 👇 --- 从这里开始加您的 11个案例大池子 --- 👇
+  const allSuccessStories = [
+    { id: 1, img: "/images/success-1.jpg", quote: t.successStories?.story1Quote, name: t.successStories?.story1Name, role: t.successStories?.story1Title },
+    { id: 2, img: "/images/success-2.jpg", quote: t.successStories?.story2Quote, name: t.successStories?.story2Name, role: t.successStories?.story2Title },
+    { id: 3, img: "/images/success-3.jpeg", quote: t.successStories?.story3Quote, name: t.successStories?.story3Name, role: t.successStories?.story3Title },
+    { id: 4, img: "/images/success-4.jpg", quote: t.successStories?.story4Quote, name: t.successStories?.story4Name, role: t.successStories?.story4Title },
+    { id: 5, img: "/images/success-5.jpg", quote: t.successStories?.story5Quote, name: t.successStories?.story5Name, role: t.successStories?.story5Title },
+    { id: 6, img: "/images/success-6.jpg", quote: t.successStories?.story6Quote, name: t.successStories?.story6Name, role: t.successStories?.story6Title },
+    { id: 7, img: "/images/success-7.jpg", quote: t.successStories?.story7Quote, name: t.successStories?.story7Name, role: t.successStories?.story7Title },
+    { id: 8, img: "/images/success-8.jpg", quote: t.successStories?.story8Quote, name: t.successStories?.story8Name, role: t.successStories?.story8Title },
+    { id: 9, img: "/images/success-9.jpg", quote: t.successStories?.story9Quote, name: t.successStories?.story9Name, role: t.successStories?.story9Title },
+    { id: 10, img: "/images/success-10.jpg", quote: t.successStories?.story10Quote, name: t.successStories?.story10Name, role: t.successStories?.story10Title },
+    { id: 11, img: "/images/success-11.jpg", quote: t.successStories?.story11Quote, name: t.successStories?.story11Name, role: t.successStories?.story11Title },
+  ];
+
+  const [displayStories, setDisplayStories] = useState<any[]>([]);
+
+  useEffect(() => {
+    // 每次组件加载时，随机打乱数组并取前 3 个
+    const shuffled = [...allSuccessStories].sort(() => 0.5 - Math.random());
+    setDisplayStories(shuffled.slice(0, 3));
+  }, [language, t]); 
 
   const scrollToForm = () => {
     setShowForm(true);
@@ -268,29 +291,42 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">{t.successStories.subtitle}</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {[
-              { img: "/images/ZOjDMDYHwuUr.jpg", quote: t.successStories.story1Quote, name: t.successStories.story1Name, role: t.successStories.story1Title },
-              { img: "/images/uvPOc0g1DiRf.jpg", quote: t.successStories.story2Quote, name: t.successStories.story2Name, role: t.successStories.story2Title },
-              { img: "/images/WGWa1kqiJlpV.jpeg", quote: t.successStories.story3Quote, name: t.successStories.story3Name, role: t.successStories.story3Title }
-            ].map((story, idx) => (
-              <div key={idx} className={`fade-in-up delay-${(idx + 1) * 100} bg-card p-6 md:p-8 rounded-3xl shadow-lg border border-border/50 flex flex-col`}>
-                <div className="mb-6 overflow-hidden rounded-2xl h-64 relative group">
-                  <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10 mix-blend-overlay" />
-                  <img src={story.img} alt="Story" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                </div>
-                <p className="text-muted-foreground mb-6 italic flex-grow text-lg leading-relaxed">"{story.quote}"</p>
-                <div className="flex items-center gap-3 border-t border-border pt-4">
-                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
-                    {story.name[0]}
+              {displayStories.map((story, idx) => (
+                <div key={story.id || idx} className={`fade-in-up delay-${(idx + 1) * 100} bg-card p-6 md:p-8 rounded-3xl shadow-lg border border-border/50 flex flex-col group`}>
+                  
+                  {/* 👇 图片和隐私盾牌区域 👇 */}
+                  <div className="mb-6 overflow-hidden rounded-2xl h-64 relative">
+                    <img 
+                      src={story.img} 
+                      alt="Story" 
+                      className="w-full h-full object-cover blur-[5px] group-hover:blur-[2px] transition-all duration-700 transform group-hover:scale-105" 
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10" />
+                    
+                    <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded-full text-[11px] font-bold text-white/90 border border-white/20 flex items-center gap-1.5 shadow-lg tracking-wider z-20">
+                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> 
+                      Privacy Protected
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-bold text-foreground">{story.name}</p>
-                    <p className="text-xs text-primary uppercase tracking-wider">{story.role}</p>
+                  
+                  {/* 👇 文案区域 👇 */}
+                  <p className="text-muted-foreground mb-6 italic flex-grow text-lg leading-relaxed">
+                    "{story.quote || '...'}"
+                  </p>
+                  
+                  {/* 👇 头像和名字区域 👇 */}
+                  <div className="flex items-center gap-3 border-t border-border pt-4">
+                    <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+                      {story.name ? story.name[0] : ''}
+                    </div>
+                    <div>
+                      <p className="font-bold text-foreground">{story.name || '...'}</p>
+                      <p className="text-xs text-primary uppercase tracking-wider">{story.role || '...'}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
         </div>
       </section>
 
