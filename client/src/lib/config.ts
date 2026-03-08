@@ -53,7 +53,7 @@ export const personaPool = [
     },
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg"],
     // 专属号码池
-    whatsappNumbers: ["447526833681", "447544476515"], 
+    whatsappNumbers: ["447526833681"], 
     get whatsappNumber() { 
       return pickRandom(this.whatsappNumbers); 
     }
