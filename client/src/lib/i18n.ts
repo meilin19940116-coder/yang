@@ -109,6 +109,18 @@ export const translations = {
     footer: { tagline: "Where meaningful connections begin", privacy: "Privacy Policy", terms: "Terms of Service", contact: "Contact Us", copyright: "© 2026 Synchro. All rights reserved." },
     socialProof: { justMatched: "just matched with a consultant", from: "from" },
     trustBadges: { bankLevel: "Bank-Level Encryption", verified: "100% Verified Members", secure: "Secure & Confidential" }
+    legal: {
+      privacyTitle: "Privacy Policy",
+      privacy1: "1. Information Collection: We collect essential information to provide accurate matchmaking services. Your data is never sold.",
+      privacy2: "2. Use of Information: Your data is used exclusively for finding your match and improving our platform.",
+      privacy3: "3. Data Sharing: We do not share your profile with third parties or advertisers without your explicit consent.",
+      privacy4: "4. Security: We implement strict technical and organizational measures to protect your information against unauthorized access.",
+      termsTitle: "Terms of Service",
+      terms1: "1. Eligibility: Membership is restricted to professional individuals seeking serious connections. Users must be between the ages of 35 and 65.",
+      terms2: "2. Verification: All applicants undergo a review process. We reserve the right to decline applications that do not meet our quality standards.",
+      terms3: "3. Code of Conduct: Members agree to provide truthful background information and maintain professional decorum during introductions.",
+      terms4: "4. Limitation of Liability: Synchro provides a boutique matchmaking service. While we vet all members, personal chemistry and relationship outcomes are individual."
+    }
   },
   zh: {
     nav: { home: "首页", about: "关于我们", howItWorks: "如何运作", apply: "立即申请" },
@@ -212,6 +224,18 @@ export const translations = {
     footer: { tagline: "有意义的连接从这里开始", privacy: "隐私政策", terms: "服务条款", contact: "联系我们", copyright: "© 2026 Synchro. 保留所有权利。" },
     socialProof: { justMatched: "刚刚匹配成功", from: "来自" },
     trustBadges: { bankLevel: "银行级加密", verified: "100% 真实会员", secure: "安全且私密" }
+    legal: {
+      privacyTitle: "隐私政策",
+      privacy1: "1. 信息收集：我们收集必要的信息以提供精准的匹配服务。您的数据绝不会被出售。",
+      privacy2: "2. 信息使用：您的数据仅用于寻找您的匹配对象和改进我们的平台。",
+      privacy3: "3. 数据共享：未经您的明确同意，我们不会与第三方或广告商分享您的个人资料。",
+      privacy4: "4. 安全性：我们采取严格的技术和组织措施，保护您的信息免受未经授权的访问。",
+      termsTitle: "服务条款",
+      terms1: "1. 资格要求：会员资格仅限于寻求严肃关系的专业人士。用户年龄必须在35至65岁之间。",
+      terms2: "2. 审核机制：所有申请人都需经过审核。我们保留拒绝不符合我们质量标准的申请的权利。",
+      terms3: "3. 行为准则：会员同意提供真实的背景信息，并在介绍过程中保持专业的礼仪。",
+      terms4: "4. 责任限制：Synchro提供精品相亲服务。虽然我们会对所有会员进行审查，但个人的化学反应和关系结果因人而异。"
+    }
   },
   es: {
     nav: { home: "Inicio", about: "Acerca de", howItWorks: "Cómo Funciona", apply: "Aplicar Ahora" },
@@ -314,6 +338,18 @@ export const translations = {
     footer: { tagline: "Donde comienzan las conexiones significativas", privacy: "Política de Privacidad", terms: "Términos de Servicio", contact: "Contáctanos", copyright: "© 2026 Synchro. Todos los derechos reservados." },
     socialProof: { justMatched: "acaba de coincidir con un consultor", from: "de" },
     trustBadges: { bankLevel: "Cifrado de nivel bancario", verified: "Miembros 100% verificados", secure: "Seguro y confidencial" }
+    legal: {
+      privacyTitle: "Política de Privacidad",
+      privacy1: "1. Recopilación de información: Recopilamos información esencial para ofrecer servicios precisos de emparejamiento. Sus datos nunca se venden.",
+      privacy2: "2. Uso de la información: Sus datos se utilizan exclusivamente para encontrar a su pareja y mejorar nuestra plataforma.",
+      privacy3: "3. Intercambio de datos: No compartimos su perfil con terceros ni anunciantes sin su consentimiento explícito.",
+      privacy4: "4. Seguridad: Implementamos estrictas medidas técnicas y organizativas para proteger su información contra accesos no autorizados.",
+      termsTitle: "Términos de Servicio",
+      terms1: "1. Elegibilidad: La membresía está restringida a profesionales que buscan conexiones serias. Los usuarios deben tener entre 35 y 65 años.",
+      terms2: "2. Verificación: Todos los solicitantes pasan por un proceso de revisión. Nos reservamos el derecho de rechazar solicitudes que no cumplan con nuestros estándares.",
+      terms3: "3. Código de conducta: Los miembros aceptan proporcionar información veraz y mantener un decoro profesional durante las presentaciones.",
+      terms4: "4. Limitación de responsabilidad: Synchro ofrece un servicio de emparejamiento boutique. Aunque verificamos a los miembros, la química y los resultados son individuales."
+    }
   },
   pt: {
     nav: { home: "Início", about: "Sobre", howItWorks: "Como Funciona", apply: "Aplicar Agora" },
@@ -416,6 +452,18 @@ export const translations = {
     footer: { tagline: "Onde conexões significativas começam", privacy: "Política de Privacidade", terms: "Termos de Serviço", contact: "Contate-nos", copyright: "© 2026 Synchro. Todos os direitos reservados." },
     socialProof: { justMatched: "acabou de ser correspondido com um consultor", from: "de" },
     trustBadges: { bankLevel: "Criptografia de nível bancário", verified: "Membros 100% verificados", secure: "Seguro e confidencial" }
+    legal: {
+      privacyTitle: "Política de Privacidade",
+      privacy1: "1. Recolha de Informação: Recolhemos informações essenciais para fornecer serviços precisos de matchmaking. Os seus dados nunca são vendidos.",
+      privacy2: "2. Uso da Informação: Os seus dados são usados exclusivamente para encontrar o seu par e melhorar a nossa plataforma.",
+      privacy3: "3. Partilha de Dados: Não partilhamos o seu perfil com terceiros ou anunciantes sem o seu consentimento explícito.",
+      privacy4: "4. Segurança: Implementamos medidas técnicas e organizacionais rigorosas para proteger as suas informações contra acesso não autorizado.",
+      termsTitle: "Termos de Serviço",
+      terms1: "1. Elegibilidade: A adesão é restrita a profissionais que procuram conexões sérias. Os utilizadores devem ter entre 35 e 65 anos.",
+      terms2: "2. Verificação: Todos os candidatos passam por um processo de revisão. Reservamo-nos o direito de recusar inscrições que não atendam aos nossos padrões de qualidade.",
+      terms3: "3. Código de Conduta: Os membros concordam em fornecer informações de fundo verdadeiras e manter o decoro profissional durante as apresentações.",
+      terms4: "4. Limitação de Responsabilidade: A Synchro oferece um serviço de matchmaking boutique. Embora verifiquemos todos os membros, a química pessoal e os resultados do relacionamento são individuais."
+    }
   },
   ja: {
     nav: { home: "ホーム", about: "について", howItWorks: "仕組み", apply: "今すぐ申し込む" },
@@ -519,6 +567,18 @@ export const translations = {
     footer: { tagline: "有意義なつながりが始まる場所", privacy: "プライバシーポリシー", terms: "利用規約", contact: "お問い合わせ", copyright: "© 2026 Synchro. すべての権利予約。" },
     socialProof: { justMatched: "さんがコンサルタントとマッチしました", from: "の" },
     trustBadges: { bankLevel: "銀行レベルの暗号化", verified: "100% 認証済みメンバー", secure: "安全かつ機密" }
+    legal: {
+      privacyTitle: "プライバシーポリシー",
+      privacy1: "1. 情報収集: 正確なマッチングサービスを提供するために不可欠な情報を収集します。データが販売されることはありません。",
+      privacy2: "2. 情報の利用: お客様のデータは、マッチングの検索およびプラットフォームの改善にのみ使用されます。",
+      privacy3: "3. データの共有: 明示的な同意なしに、プロファイルを第三者や広告主と共有することはありません。",
+      privacy4: "4. セキュリティ: 不正アクセスから情報を保護するため、厳格な技術的および組織的対策を実施しています。",
+      termsTitle: "利用規約",
+      terms1: "1. 参加資格: メンバーシップは、真剣な出会いを求める専門職の方に限定されています。年齢は35歳から65歳までとします。",
+      terms2: "2. 審査: すべての応募者は審査プロセスを受けます。当社の品質基準を満たさない応募を拒否する権利を留保します。",
+      terms3: "3. 行動規範: メンバーは、真実の背景情報を提供し、紹介中は専門的な礼儀を保つことに同意するものとします。",
+      terms4: "4. 責任の制限: Synchroはブティック型のマッチングサービスを提供します。全メンバーを審査しますが、個人的な相性や関係の結果は個人の責任となります。"
+    }
   },
   ko: {
     nav: { home: "홈", about: "소개", howItWorks: "작동 방식", apply: "지금 신청" },
@@ -622,6 +682,18 @@ export const translations = {
     footer: { tagline: "의미 있는 연결이 시작되는 곳", privacy: "개인정보 보호정책", terms: "서비스 약관", contact: "문의하기", copyright: "© 2026 Synchro. 모든 권리 보유." },
     socialProof: { justMatched: "님이 방금 컨설턴트와 매칭되었습니다", from: "" },
     trustBadges: { bankLevel: "은행 수준 암호화", verified: "100% 인증된 회원", secure: "안전 및 기밀 유지" }
+    legal: {
+      privacyTitle: "개인정보 처리방침",
+      privacy1: "1. 정보 수집: 정확한 매치메이킹 서비스를 제공하기 위해 필수적인 정보를 수집합니다. 귀하의 데이터는 절대 판매되지 않습니다.",
+      privacy2: "2. 정보 사용: 귀하의 데이터는 파트너를 찾고 플랫폼을 개선하는 데에만 독점적으로 사용됩니다.",
+      privacy3: "3. 데이터 공유: 귀하의 명시적인 동의 없이 제3자나 광고주와 프로필을 공유하지 않습니다.",
+      privacy4: "4. 보안: 무단 액세스로부터 귀하의 정보를 보호하기 위해 엄격한 기술적 및 조직적 조치를 시행합니다.",
+      termsTitle: "서비스 약관",
+      terms1: "1. 자격 요건: 멤버십은 진지한 관계를 원하는 전문가로 제한됩니다. 사용자는 35세에서 65세 사이여야 합니다.",
+      terms2: "2. 검증: 모든 지원자는 심사 과정을 거칩니다. 당사는 품질 기준을 충족하지 않는 지원을 거부할 권리가 있습니다.",
+      terms3: "3. 행동 규범: 회원은 진실된 배경 정보를 제공하고 소개 과정에서 전문적인 품위를 유지하는 데 동의합니다.",
+      terms4: "4. 책임 제한: Synchro는 부티크 매치메이킹 서비스를 제공합니다. 모든 회원을 심사하지만 개인적인 케미스트리와 관계의 결과는 개인에 따라 다릅니다."
+    }
   },
   fr: {
     nav: { home: "Accueil", about: "À propos", howItWorks: "Comment ça marche", apply: "Postuler maintenant" },
@@ -725,6 +797,18 @@ export const translations = {
     footer: { tagline: "Où commencent les connexions significatives", privacy: "Politique de Confidentialité", terms: "Conditions d'Utilisation", contact: "Nous Contacter", copyright: "© 2026 Synchro. Tous droits réservés." },
     socialProof: { justMatched: "vient de matcher avec un consultant", from: "de" },
     trustBadges: { bankLevel: "Cryptage de niveau bancaire", verified: "Membres 100% vérifiés", secure: "Sécurisé et confidentiel" }
+    legal: {
+      privacyTitle: "Politique de confidentialité",
+      privacy1: "1. Collecte d'informations : Nous collectons les informations essentielles pour fournir des services de matchmaking précis. Vos données ne sont jamais vendues.",
+      privacy2: "2. Utilisation des informations : Vos données sont utilisées exclusivement pour trouver votre partenaire et améliorer notre plateforme.",
+      privacy3: "3. Partage de données : Nous ne partageons pas votre profil avec des tiers ou des annonceurs sans votre consentement explicite.",
+      privacy4: "4. Sécurité : Nous mettons en œuvre des mesures techniques et organisationnelles strictes pour protéger vos informations contre tout accès non autorisé.",
+      termsTitle: "Conditions d'utilisation",
+      terms1: "1. Éligibilité : L'adhésion est restreinte aux professionnels recherchant des connexions sérieuses. Les utilisateurs doivent avoir entre 35 et 65 ans.",
+      terms2: "2. Vérification : Tous les candidats passent par un processus d'examen. Nous nous réservons le droit de refuser les candidatures qui ne répondent pas à nos normes de qualité.",
+      terms3: "3. Code de conduite : Les membres acceptent de fournir des informations de fond véridiques et de maintenir un décorum professionnel pendant les présentations.",
+      terms4: "4. Limitation de responsabilité : Synchro fournit un service de matchmaking boutique. Bien que nous vérifions tous les membres, l'alchimie personnelle et les résultats de la relation sont individuels."
+    }
   },
   de: {
     nav: { home: "Startseite", about: "Über uns", howItWorks: "Wie es funktioniert", apply: "Jetzt bewerben" },
@@ -828,6 +912,18 @@ export const translations = {
     footer: { tagline: "Wo bedeutungsvolle Verbindungen beginnen", privacy: "Datenschutzrichtlinie", terms: "Nutzungsbedingungen", contact: "Kontaktieren Sie uns", copyright: "© 2026 Synchro. Alle Rechte vorbehalten." },
     socialProof: { justMatched: "hat gerade einen Partner gefunden", from: "aus" },
     trustBadges: { bankLevel: "Banken-Verschlüsselung", verified: "100% verifizierte Mitglieder", secure: "Sicher & Vertraulich" }
+    legal: {
+      privacyTitle: "Datenschutzrichtlinie",
+      privacy1: "1. Informationsbeschaffung: Wir erfassen wichtige Informationen, um genaue Matchmaking-Dienste bereitzustellen. Ihre Daten werden niemals verkauft.",
+      privacy2: "2. Nutzung von Informationen: Ihre Daten werden ausschließlich dazu verwendet, Ihren Partner zu finden und unsere Plattform zu verbessern.",
+      privacy3: "3. Datenweitergabe: Wir geben Ihr Profil nicht ohne Ihre ausdrückliche Zustimmung an Dritte oder Werbetreibende weiter.",
+      privacy4: "4. Sicherheit: Wir setzen strenge technische und organisatorische Maßnahmen um, um Ihre Informationen vor unbefugtem Zugriff zu schützen.",
+      termsTitle: "Nutzungsbedingungen",
+      terms1: "1. Teilnahmeberechtigung: Die Mitgliedschaft ist auf Fachleute beschränkt, die ernsthafte Verbindungen suchen. Benutzer müssen zwischen 35 und 65 Jahre alt sein.",
+      terms2: "2. Überprüfung: Alle Bewerber durchlaufen einen Überprüfungsprozess. Wir behalten uns das Recht vor, Bewerbungen abzulehnen, die unseren Qualitätsstandards nicht entsprechen.",
+      terms3: "3. Verhaltenskodex: Die Mitglieder stimmen zu, wahrheitsgemäße Hintergrundinformationen bereitzustellen und während der Vorstellungen professionellen Anstand zu wahren.",
+      terms4: "4. Haftungsbeschränkung: Synchro bietet einen Boutique-Matchmaking-Service. Während wir alle Mitglieder überprüfen, sind persönliche Chemie und Beziehungsergebnisse individuell."
+    }
   },
   it: {
     nav: { home: "Home", about: "Chi siamo", howItWorks: "Come funziona", apply: "Candidati ora" },
@@ -931,6 +1027,18 @@ export const translations = {
     footer: { tagline: "Where meaningful connections begin", privacy: "Politica sulla Privacy", terms: "Termini di Servizio", contact: "Contattaci", copyright: "© 2026 Synchro. Tutti i diritti riservati." },
     socialProof: { justMatched: "ha appena trovato un partner", from: "da" },
     trustBadges: { bankLevel: "Crittografia a livello bancario", verified: "Membri verificati al 100%", secure: "Sicuro e riservato" }
+    legal: {
+      privacyTitle: "Informativa sulla privacy",
+      privacy1: "1. Raccolta delle informazioni: Raccogliamo le informazioni essenziali per fornire servizi di matchmaking accurati. I tuoi dati non vengono mai venduti.",
+      privacy2: "2. Uso delle informazioni: I tuoi dati sono utilizzati esclusivamente per trovare il tuo partner e migliorare la nostra piattaforma.",
+      privacy3: "3. Condivisione dei dati: Non condividiamo il tuo profilo con terze parti o inserzionisti senza il tuo esplicito consenso.",
+      privacy4: "4. Sicurezza: Implementiamo rigorose misure tecniche e organizzative per proteggere le tue informazioni da accessi non autorizzati.",
+      termsTitle: "Termini di servizio",
+      terms1: "1. Idoneità: L'iscrizione è riservata a professionisti che cercano connessioni serie. Gli utenti devono avere tra i 35 e i 65 anni.",
+      terms2: "2. Verifica: Tutti i candidati sono sottoposti a un processo di revisione. Ci riserviamo il diritto di rifiutare le candidature che non soddisfano i nostri standard di qualità.",
+      terms3: "3. Codice di condotta: I membri accettano di fornire informazioni di base veritiere e di mantenere un decoro professionale durante le presentazioni.",
+      terms4: "4. Limitazione di responsabilità: Synchro fornisce un servizio di matchmaking boutique. Sebbene esaminiamo tutti i membri, la chimica personale e i risultati relazionali sono individuali."
+    }
   },
   ru: {
     nav: { home: "Главная", about: "О нас", howItWorks: "Как это работает", apply: "Подать заявку" },
@@ -1034,6 +1142,18 @@ export const translations = {
     footer: { tagline: "Где начинаются значимые связи", privacy: "Политика Конфиденциальности", terms: "Условия Обслуживания", contact: "Свяжитесь с Нами", copyright: "© 2026 Synchro. Все права защищены." },
     socialProof: { justMatched: "только что совпал с консультантом", from: "из" },
     trustBadges: { bankLevel: "Шифрование банковского уровня", verified: "100% проверенные участники", secure: "Безопасно и конфиденциально" }
+    legal: {
+      privacyTitle: "Политика конфиденциальности",
+      privacy1: "1. Сбор информации: Мы собираем необходимую информацию для предоставления точных услуг по подбору партнеров. Ваши данные никогда не продаются.",
+      privacy2: "2. Использование информации: Ваши данные используются исключительно для поиска вашего партнера и улучшения нашей платформы.",
+      privacy3: "3. Обмен данными: Мы не передаем ваш профиль третьим лицам или рекламодателям без вашего явного согласия.",
+      privacy4: "4. Безопасность: Мы применяем строгие технические и организационные меры для защиты вашей информации от несанкционированного доступа.",
+      termsTitle: "Условия использования",
+      terms1: "1. Право на участие: Членство ограничено профессионалами, ищущими серьезные отношения. Возраст пользователей должен быть от 35 до 65 лет.",
+      terms2: "2. Проверка: Все кандидаты проходят процесс проверки. Мы оставляем за собой право отклонять заявки, не соответствующие нашим стандартам качества.",
+      terms3: "3. Кодекс поведения: Участники соглашаются предоставлять правдивую информацию о себе и соблюдать профессиональный этикет во время знакомств.",
+      terms4: "4. Ограничение ответственности: Synchro предоставляет бутиковые услуги по подбору пары. Хотя мы проверяем всех участников, личная химия и результаты отношений индивидуальны."
+    }
   },
   ar: {
     nav: { home: "الرئيسية", about: "من نحن", howItWorks: "كيف يعمل", apply: "قدم الآن" },
@@ -1137,6 +1257,18 @@ export const translations = {
     footer: { tagline: "حيث تبدأ الاتصالات ذات المعنى", privacy: "سياسة الخصوصية", terms: "شروط الخدمة", contact: "اتصل بنا", copyright: "© 2026 Synchro. جميع الحقوق محفوظة." },
     socialProof: { justMatched: "تطابق للتو مع مستشار", from: "من" },
     trustBadges: { bankLevel: "تشفير على مستوى البنك", verified: "أعضاء تم التحقق منهم بنسبة 100%", secure: "آمن وسري" }
+    legal: {
+      privacyTitle: "سياسة الخصوصية",
+      privacy1: "1. جمع المعلومات: نقوم بجمع المعلومات الأساسية لتقديم خدمات توفيق دقيقة. لا يتم بيع بياناتك أبدًا.",
+      privacy2: "2. استخدام المعلومات: تُستخدم بياناتك حصريًا للعثور على شريكك وتحسين منصتنا.",
+      privacy3: "3. مشاركة البيانات: لا نشارك ملفك الشخصي مع أطراف ثالثة أو معلنين دون موافقتك الصريحة.",
+      privacy4: "4. الأمان: نطبق تدابير فنية وتنظيمية صارمة لحماية معلوماتك من الوصول غير المصرح به.",
+      termsTitle: "شروط الخدمة",
+      terms1: "1. الأهلية: تقتصر العضوية على المهنيين الذين يسعون للحصول على اتصالات جادة. يجب أن تتراوح أعمار المستخدمين بين 35 و 65 عامًا.",
+      terms2: "2. التحقق: يخضع جميع المتقدمين لعملية مراجعة. نحتفظ بالحق في رفض الطلبات التي لا تلبي معايير الجودة لدينا.",
+      terms3: "3. قواعد السلوك: يوافق الأعضاء على تقديم معلومات أساسية صادقة والحفاظ على اللياقة المهنية أثناء التقديمات.",
+      terms4: "4. حدود المسؤولية: تقدم Synchro خدمة توفيق بوتيك. بينما نقوم بفحص جميع الأعضاء، فإن الكيمياء الشخصية ونتائج العلاقة فردية."
+    }
   }
 };
 
