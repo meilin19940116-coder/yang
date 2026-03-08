@@ -108,7 +108,7 @@ export const translations = {
     queue: { title: "Application Received", message: "Thank you for your application. Due to high demand, your profile has been placed in our review queue. We will contact you soon.", note: "We appreciate your patience as we carefully review each application." },
     footer: { tagline: "Where meaningful connections begin", privacy: "Privacy Policy", terms: "Terms of Service", contact: "Contact Us", copyright: "© 2026 Synchro. All rights reserved." },
     socialProof: { justMatched: "just matched with a consultant", from: "from" },
-    trustBadges: { bankLevel: "Bank-Level Encryption", verified: "100% Verified Members", secure: "Secure & Confidential" }
+    trustBadges: { bankLevel: "Bank-Level Encryption", verified: "100% Verified Members", secure: "Secure & Confidential" },
     legal: {
       privacyTitle: "Privacy Policy",
       privacy1: "1. Information Collection: We collect essential information to provide accurate matchmaking services. Your data is never sold.",
@@ -223,7 +223,7 @@ export const translations = {
     queue: { title: "申请已收到", message: "感谢你的申请。由于申请人数众多,你的资料已进入排队审核。我们会尽快与你联系。", note: "感谢你的耐心等待,我们会仔细审核每一份申请。" },
     footer: { tagline: "有意义的连接从这里开始", privacy: "隐私政策", terms: "服务条款", contact: "联系我们", copyright: "© 2026 Synchro. 保留所有权利。" },
     socialProof: { justMatched: "刚刚匹配成功", from: "来自" },
-    trustBadges: { bankLevel: "银行级加密", verified: "100% 真实会员", secure: "安全且私密" }
+    trustBadges: { bankLevel: "银行级加密", verified: "100% 真实会员", secure: "安全且私密" },
     legal: {
       privacyTitle: "隐私政策",
       privacy1: "1. 信息收集：我们收集必要的信息以提供精准的匹配服务。您的数据绝不会被出售。",
@@ -337,7 +337,7 @@ export const translations = {
     queue: { title: "Solicitud Recibida", message: "Gracias por tu solicitud. Debido a la alta demanda, tu perfil ha sido colocado en nuestra cola de revisión. Te contactaremos pronto.", note: "Apreciamos tu paciencia mientras revisamos cuidadosamente cada solicitud." },
     footer: { tagline: "Donde comienzan las conexiones significativas", privacy: "Política de Privacidad", terms: "Términos de Servicio", contact: "Contáctanos", copyright: "© 2026 Synchro. Todos los derechos reservados." },
     socialProof: { justMatched: "acaba de coincidir con un consultor", from: "de" },
-    trustBadges: { bankLevel: "Cifrado de nivel bancario", verified: "Miembros 100% verificados", secure: "Seguro y confidencial" }
+    trustBadges: { bankLevel: "Cifrado de nivel bancario", verified: "Miembros 100% verificados", secure: "Seguro y confidencial" },
     legal: {
       privacyTitle: "Política de Privacidad",
       privacy1: "1. Recopilación de información: Recopilamos información esencial para ofrecer servicios precisos de emparejamiento. Sus datos nunca se venden.",
@@ -451,7 +451,7 @@ export const translations = {
     queue: { title: "Aplicação Recebida", message: "Obrigado pela sua aplicação. Devido à alta demanda, seu perfil foi colocado em nossa fila de revisão. Entraremos em contato em breve.", note: "Agradecemos sua paciência enquanto revisamos cuidadosamente cada aplicação." },
     footer: { tagline: "Onde conexões significativas começam", privacy: "Política de Privacidade", terms: "Termos de Serviço", contact: "Contate-nos", copyright: "© 2026 Synchro. Todos os direitos reservados." },
     socialProof: { justMatched: "acabou de ser correspondido com um consultor", from: "de" },
-    trustBadges: { bankLevel: "Criptografia de nível bancário", verified: "Membros 100% verificados", secure: "Seguro e confidencial" }
+    trustBadges: { bankLevel: "Criptografia de nível bancário", verified: "Membros 100% verificados", secure: "Seguro e confidencial" },
     legal: {
       privacyTitle: "Política de Privacidade",
       privacy1: "1. Recolha de Informação: Recolhemos informações essenciais para fornecer serviços precisos de matchmaking. Os seus dados nunca são vendidos.",
@@ -566,7 +566,7 @@ export const translations = {
     queue: { title: "申請を受け取りました", message: "申請ありがとうございます。需要が高いため、あなたのプロフィールはレビューキューに配置されました。まもなくご連絡いたします。", note: "各申請を慎重にレビューしている間、お待ちいただきありがとうございます。" },
     footer: { tagline: "有意義なつながりが始まる場所", privacy: "プライバシーポリシー", terms: "利用規約", contact: "お問い合わせ", copyright: "© 2026 Synchro. すべての権利予約。" },
     socialProof: { justMatched: "さんがコンサルタントとマッチしました", from: "の" },
-    trustBadges: { bankLevel: "銀行レベルの暗号化", verified: "100% 認証済みメンバー", secure: "安全かつ機密" }
+    trustBadges: { bankLevel: "銀行レベルの暗号化", verified: "100% 認証済みメンバー", secure: "安全かつ機密" },
     legal: {
       privacyTitle: "プライバシーポリシー",
       privacy1: "1. 情報収集: 正確なマッチングサービスを提供するために不可欠な情報を収集します。データが販売されることはありません。",
@@ -681,7 +681,7 @@ export const translations = {
     queue: { title: "신청 접수됨", message: "신청해 주셔서 감사합니다. 높은 수요로 인해 프로필이 검토 대기열에 배치되었습니다. 곧 연락드리겠습니다.", note: "각 신청을 신중하게 검토하는 동안 기다려 주셔서 감사합니다." },
     footer: { tagline: "의미 있는 연결이 시작되는 곳", privacy: "개인정보 보호정책", terms: "서비스 약관", contact: "문의하기", copyright: "© 2026 Synchro. 모든 권리 보유." },
     socialProof: { justMatched: "님이 방금 컨설턴트와 매칭되었습니다", from: "" },
-    trustBadges: { bankLevel: "은행 수준 암호화", verified: "100% 인증된 회원", secure: "안전 및 기밀 유지" }
+    trustBadges: { bankLevel: "은행 수준 암호화", verified: "100% 인증된 회원", secure: "안전 및 기밀 유지" },
     legal: {
       privacyTitle: "개인정보 처리방침",
       privacy1: "1. 정보 수집: 정확한 매치메이킹 서비스를 제공하기 위해 필수적인 정보를 수집합니다. 귀하의 데이터는 절대 판매되지 않습니다.",
@@ -796,7 +796,7 @@ export const translations = {
     queue: { title: "Candidature Reçue", message: "Merci pour votre candidature. En raison de la forte demande, votre profil a été placé dans notre file d'attente d'examen. Nous vous contacterons bientôt.", note: "Nous apprécions votre patience pendant que nous examinons attentivement chaque candidature." },
     footer: { tagline: "Où commencent les connexions significatives", privacy: "Politique de Confidentialité", terms: "Conditions d'Utilisation", contact: "Nous Contacter", copyright: "© 2026 Synchro. Tous droits réservés." },
     socialProof: { justMatched: "vient de matcher avec un consultant", from: "de" },
-    trustBadges: { bankLevel: "Cryptage de niveau bancaire", verified: "Membres 100% vérifiés", secure: "Sécurisé et confidentiel" }
+    trustBadges: { bankLevel: "Cryptage de niveau bancaire", verified: "Membres 100% vérifiés", secure: "Sécurisé et confidentiel" },
     legal: {
       privacyTitle: "Politique de confidentialité",
       privacy1: "1. Collecte d'informations : Nous collectons les informations essentielles pour fournir des services de matchmaking précis. Vos données ne sont jamais vendues.",
@@ -911,7 +911,7 @@ export const translations = {
     queue: { title: "Bewerbung Erhalten", message: "Vielen Dank für Ihre Bewerbung. Aufgrund der hohen Nachfrage wurde Ihr Profil in unsere Prüfungswarteschlange aufgenommen. Wir werden Sie bald kontaktieren.", note: "Wir schätzen Ihre Geduld, während wir jede Bewerbung sorgfältig prüfen." },
     footer: { tagline: "Wo bedeutungsvolle Verbindungen beginnen", privacy: "Datenschutzrichtlinie", terms: "Nutzungsbedingungen", contact: "Kontaktieren Sie uns", copyright: "© 2026 Synchro. Alle Rechte vorbehalten." },
     socialProof: { justMatched: "hat gerade einen Partner gefunden", from: "aus" },
-    trustBadges: { bankLevel: "Banken-Verschlüsselung", verified: "100% verifizierte Mitglieder", secure: "Sicher & Vertraulich" }
+    trustBadges: { bankLevel: "Banken-Verschlüsselung", verified: "100% verifizierte Mitglieder", secure: "Sicher & Vertraulich" },
     legal: {
       privacyTitle: "Datenschutzrichtlinie",
       privacy1: "1. Informationsbeschaffung: Wir erfassen wichtige Informationen, um genaue Matchmaking-Dienste bereitzustellen. Ihre Daten werden niemals verkauft.",
@@ -1026,7 +1026,7 @@ export const translations = {
     queue: { title: "Candidatura Ricevuta", message: "Grazie per la tua candidatura. A causa dell'alta domanda, il tuo profilo è stato inserito nella nostra coda di revisione. Ti contatteremo presto.", note: "Apprezziamo la tua pazienza mentre esaminiamo attentamente ogni candidatura." },
     footer: { tagline: "Where meaningful connections begin", privacy: "Politica sulla Privacy", terms: "Termini di Servizio", contact: "Contattaci", copyright: "© 2026 Synchro. Tutti i diritti riservati." },
     socialProof: { justMatched: "ha appena trovato un partner", from: "da" },
-    trustBadges: { bankLevel: "Crittografia a livello bancario", verified: "Membri verificati al 100%", secure: "Sicuro e riservato" }
+    trustBadges: { bankLevel: "Crittografia a livello bancario", verified: "Membri verificati al 100%", secure: "Sicuro e riservato" },
     legal: {
       privacyTitle: "Informativa sulla privacy",
       privacy1: "1. Raccolta delle informazioni: Raccogliamo le informazioni essenziali per fornire servizi di matchmaking accurati. I tuoi dati non vengono mai venduti.",
@@ -1141,7 +1141,7 @@ export const translations = {
     queue: { title: "Заявка Получена", message: "Спасибо за вашу заявку. Из-за высокого спроса ваш профиль был помещен в нашу очередь на проверку. Мы свяжемся с вами в ближайшее время.", note: "Мы ценим ваше терпение, пока мы тщательно проверяем каждую заявку." },
     footer: { tagline: "Где начинаются значимые связи", privacy: "Политика Конфиденциальности", terms: "Условия Обслуживания", contact: "Свяжитесь с Нами", copyright: "© 2026 Synchro. Все права защищены." },
     socialProof: { justMatched: "только что совпал с консультантом", from: "из" },
-    trustBadges: { bankLevel: "Шифрование банковского уровня", verified: "100% проверенные участники", secure: "Безопасно и конфиденциально" }
+    trustBadges: { bankLevel: "Шифрование банковского уровня", verified: "100% проверенные участники", secure: "Безопасно и конфиденциально" },
     legal: {
       privacyTitle: "Политика конфиденциальности",
       privacy1: "1. Сбор информации: Мы собираем необходимую информацию для предоставления точных услуг по подбору партнеров. Ваши данные никогда не продаются.",
@@ -1256,7 +1256,7 @@ export const translations = {
     queue: { title: "تم استلام الطلب", message: "شكرًا لطلبك. نظرًا للطلب الكبير، تم وضع ملفك الشخصي في قائمة انتظار المراجعة. سنتواصل معك قريبًا.", note: "نحن نقدر صبرك بينما نراجع كل طلب بعناية." },
     footer: { tagline: "حيث تبدأ الاتصالات ذات المعنى", privacy: "سياسة الخصوصية", terms: "شروط الخدمة", contact: "اتصل بنا", copyright: "© 2026 Synchro. جميع الحقوق محفوظة." },
     socialProof: { justMatched: "تطابق للتو مع مستشار", from: "من" },
-    trustBadges: { bankLevel: "تشفير على مستوى البنك", verified: "أعضاء تم التحقق منهم بنسبة 100%", secure: "آمن وسري" }
+    trustBadges: { bankLevel: "تشفير على مستوى البنك", verified: "أعضاء تم التحقق منهم بنسبة 100%", secure: "آمن وسري" },
     legal: {
       privacyTitle: "سياسة الخصوصية",
       privacy1: "1. جمع المعلومات: نقوم بجمع المعلومات الأساسية لتقديم خدمات توفيق دقيقة. لا يتم بيع بياناتك أبدًا.",
