@@ -69,17 +69,33 @@ export default function Home() {
       document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
-  const handleSupportConnect = () => {
-    const supportNumber = "447902187293"; // 您的英国客服号
+  const scrollToId = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileMenuOpen(false); // 如果是手机端点击，顺便把菜单关了
+  };
+  const handleSupportConnect = (e: React.MouseEvent) => {
+    e.preventDefault(); // 👈 关键：拦截立即跳转，先处理复制逻辑
     
-    // 1. 自动复制到剪贴板 (兼容 TikTok)
+    const supportNumber = "447902187293";
+    
+    // 执行复制
     navigator.clipboard.writeText(supportNumber).then(() => {
       setSupportCopied(true);
-      setTimeout(() => setSupportCopied(false), 2000); // 2秒后小气泡消失
+      
+      // 👈 延迟 1.2 秒后再跳转，给客户留出看提示的时间
+      setTimeout(() => {
+        // 使用 window.location.href 在当前窗口或新窗口跳转
+        window.location.href = `https://wa.me/${supportNumber}`;
+        // 2秒后关闭气泡状态
+        setTimeout(() => setSupportCopied(false), 2000);
+      }, 1200);
+    }).catch(() => {
+      // 兜底：如果复制失败（极少数浏览器限制），也直接跳转
+      window.location.href = `https://wa.me/${supportNumber}`;
     });
-
-    // 2. 正常跳转 (如果浏览器不拦截就直接跳了)
-    // 这里不需要写代码，<a> 标签自带的 href 会处理跳转
   };
 
   return (
@@ -105,12 +121,19 @@ export default function Home() {
           
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-            <a href="#why-us" className="text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
+            <button onClick={() => scrollToId('why-us')} className="text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
               {t.nav.about}
-            </a>
-            <a href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
+            </button>
+            <button onClick={() => scrollToId('how-it-works')} className="text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
               {t.nav.howItWorks}
-            </a>
+            </button>
+            <button onClick={() => scrollToId('success-stories')} className="text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
+              {t.nav.stories}
+            </button>
+            <button onClick={() => scrollToId('faq')} className="text-sm font-medium hover:text-primary transition-colors whitespace-nowrap">
+              {t.nav.faq}
+            </button>
+            
             
             <Select value={language} onValueChange={(value) => setLanguage(value as keyof typeof translations)}>
               <SelectTrigger className="w-[130px] bg-transparent border-primary/20 hover:border-primary/50 transition-colors">
@@ -171,20 +194,45 @@ export default function Home() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px] border-l border-primary/20 bg-background/95 backdrop-blur-xl">
                 <div className="flex flex-col gap-8 mt-12">
-                  <a 
-                    href="#why-us" 
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="text-lg font-medium hover:text-primary transition-colors border-b border-border pb-4"
+                  {/* 首页跳转 */}
+                  <button 
+                    onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); setMobileMenuOpen(false); }}
+                    className="text-lg font-medium text-left hover:text-primary transition-colors border-b border-border pb-4"
+                  >
+                    {t.nav.home}
+                  </button>
+
+                  {/* 关于我们 */}
+                  <button 
+                    onClick={() => scrollToId('why-us')}
+                    className="text-lg font-medium text-left hover:text-primary transition-colors border-b border-border pb-4"
                   >
                     {t.nav.about}
-                  </a>
-                  <a 
-                    href="#how-it-works" 
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="text-lg font-medium hover:text-primary transition-colors border-b border-border pb-4"
+                  </button>
+                  
+                  {/* 如何运作 */}
+                  <button 
+                    onClick={() => scrollToId('how-it-works')}
+                    className="text-lg font-medium text-left hover:text-primary transition-colors border-b border-border pb-4"
                   >
                     {t.nav.howItWorks}
-                  </a>
+                  </button>
+
+                  {/* 新增：成功案例 */}
+                  <button 
+                    onClick={() => scrollToId('success-stories')}
+                    className="text-lg font-medium text-left hover:text-primary transition-colors border-b border-border pb-4"
+                  >
+                    {t.nav.stories}
+                  </button>
+
+                  {/* 新增：常见问题 */}
+                  <button 
+                    onClick={() => scrollToId('faq')}
+                    className="text-lg font-medium text-left hover:text-primary transition-colors border-b border-border pb-4"
+                  >
+                    {t.nav.faq}
+                  </button>
                   
                   <Button onClick={scrollToForm} size="lg" className="breathing-glow mt-4 w-full">
                     {t.nav.apply}
@@ -298,7 +346,7 @@ export default function Home() {
       </section>
 
       {/* Success Stories Section */}
-      <section className="py-20 md:py-32 relative bg-secondary/20">
+      <section id="success-stories" className="py-20 md:py-32 relative bg-secondary/20">
         <div className="container relative z-10 px-4 md:px-6">
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-3xl md:text-5xl mb-6 font-bold">{t.successStories.title}</h2>
@@ -355,7 +403,7 @@ export default function Home() {
       )}
 
       {/* FAQ Section */}
-      <section className="py-24 bg-card/30">
+      <section id="faq" className="py-24 bg-card/30">
         <div className="container max-w-3xl">
           <div className="text-center mb-12 fade-in-up">
             <h2 className="text-3xl font-bold mb-4">{t.faq?.title || "Frequently Asked Questions"}</h2>
@@ -396,7 +444,7 @@ export default function Home() {
             <div className="relative group">
               <a 
                 href="https://wa.me/447902187293" 
-                onClick={handleSupportConnect}
+                onClick={(e) => handleSupportConnect(e)}
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-muted-foreground hover:text-green-500 transition-colors bg-muted p-4 rounded-full flex flex-col items-center gap-2"
@@ -436,15 +484,14 @@ export default function Home() {
 
       {/* 👇 修改后的右下角悬浮按钮 👇 */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
-        {/* 点击后飘出的黑底白字提示 */}
-        {supportCopied && (
-          <div className="bg-black/80 text-white text-xs px-3 py-1.5 rounded-lg shadow-xl mb-2 animate-in fade-in slide-in-from-bottom-2">
-            {t.contact?.copied || "Number Copied!"}
+        {/* 点击后飘出的黑底白字提示 */}{supportCopied && (
+          <div className="bg-green-500 text-white text-sm font-bold px-4 py-2 rounded-xl shadow-2xl mb-2 animate-bounce ring-4 ring-white">
+             ✅ {t.contact?.copied || "Number Copied!"}
           </div>
         )}
         <a 
           href="https://wa.me/447902187293" 
-          onClick={handleSupportConnect}
+          onClick={(e) => handleSupportConnect(e)}
           target="_blank" 
           rel="noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
