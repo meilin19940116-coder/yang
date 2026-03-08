@@ -16,6 +16,7 @@ export const translations = {
     successStories: {
       title: "Love Stories That Inspire",
       subtitle: "Real connections, real happiness",
+      privacyProtected: "Privacy Protected",
       story1Quote: "Synchro helped me find someone who truly understands my ambitions and supports my dreams.",
       story1Name: "Sarah M.", story1Title: "Entrepreneur",
       story2Quote: "After years of unsuccessful dating, I finally met my soulmate through Synchro's thoughtful matching.",
@@ -118,6 +119,7 @@ export const translations = {
     successStories: {
       title: "激发灵感的爱情故事",
       subtitle: "真实的连接，真实的幸福",
+      privacyProtected: "隐私保护中",
       story1Quote: "Synchro帮我找到了那个真正理解我的抱负并支持我梦想的人。",
       story1Name: "Sarah M.", story1Title: "企业家",
       story2Quote: "经历了多年的相亲失败，我终于通过Synchro贴心的匹配遇到了灵魂伴侣。",
@@ -220,6 +222,7 @@ export const translations = {
     successStories: {
       title: "Historias de amor que inspiran",
       subtitle: "Conexiones reales, felicidad real",
+      privacyProtected: "Privacidad Protegida",
       story1Quote: "Synchro me ayudó a encontrar a alguien que realmente entiende mis ambiciones y apoya mis sueños.",
       story1Name: "Sarah M.", story1Title: "Empresaria",
       story2Quote: "Después de años de citas sin éxito, finalmente conocí a mi alma gemela a través del emparejamiento cuidadoso de Synchro.",
@@ -321,6 +324,7 @@ export const translations = {
     successStories: {
       title: "Histórias de Amor que Inspiram",
       subtitle: "Conexões reais, felicidade real",
+      privacyProtected: "Privacidade Protegida",
       story1Quote: "O Synchro ajudou-me a encontrar alguém que realmente entende as minhas ambições e apoia os meus sonhos.",
       story1Name: "Sarah M.", story1Title: "Empreendedora",
       story2Quote: "Após anos de encontros sem sucesso, finalmente conheci a minha alma gémea através do matchmaking cuidadoso do Synchro.",
@@ -422,6 +426,7 @@ export const translations = {
     successStories: {
       title: "インスピレーションを与える愛の物語",
       subtitle: "本物のつながり、本物の幸せ",
+      privacyProtected: "プライバシー保護",
       story1Quote: "Synchroは、私の野心を本当に理解し、夢をサポートしてくれる人を見つけるのを手伝ってくれました。",
       story1Name: "Sarah M.", story1Title: "起業家",
       story2Quote: "何年もうまくいかなかったデートの後、Synchroの心のこもったマッチングを通じてついにソウルメイトに出会いました。",
@@ -524,6 +529,7 @@ export const translations = {
     successStories: {
       title: "영감을 주는 사랑 이야기",
       subtitle: "진정한 연결, 진정한 행복",
+      privacyProtected: "프라이버시 보호",
       story1Quote: "Synchro는 나의 야망을 진정으로 이해하고 내 꿈을 지원하는 사람을 찾도록 도와주었습니다.",
       story1Name: "Sarah M.", story1Title: "기업가",
       story2Quote: "수년간의 실패한 데이트 끝에 Synchro의 사려 깊은 매칭을 통해 마침내 소울메이트를 만났습니다.",
@@ -626,6 +632,7 @@ export const translations = {
     successStories: {
       title: "Des histoires d'amour qui inspirent",
       subtitle: "De vraies connexions, un vrai bonheur",
+      privacyProtected: "Confidentialité Protégée",
       story1Quote: "Synchro m'a aidé à trouver quelqu'un qui comprend vraiment mes ambitions et soutient mes rêves.",
       story1Name: "Sarah M.", story1Title: "Entrepreneuse",
       story2Quote: "Après des années de rencontres infructueuses, j'ai enfin rencontré mon âme sœur grâce au matchmaking de Synchro.",
@@ -728,6 +735,7 @@ export const translations = {
     successStories: {
       title: "Liebesgeschichten, die inspirieren",
       subtitle: "Echte Verbindungen, echtes Glück",
+      privacyProtected: "Privatsphäre Geschützt",
       story1Quote: "Synchro hat mir geholfen, jemanden zu finden, der meine Ambitionen wirklich versteht und meine Träume unterstützt.",
       story1Name: "Sarah M.", story1Title: "Unternehmerin",
       story2Quote: "Nach Jahren erfolgloser Dates habe ich durch Synchros durchdachtes Matchmaking endlich meinen Seelenverwandten getroffen.",
@@ -830,6 +838,7 @@ export const translations = {
     successStories: {
       title: "Storie d'amore che ispirano",
       subtitle: "Connessioni reali, felicità reale",
+      privacyProtected: "Privacy Protetta",
       story1Quote: "Synchro mi ha aiutato a trovare qualcuno che capisce veramente le mie ambizioni e sostiene i miei sogni.",
       story1Name: "Sarah M.", story1Title: "Imprenditrice",
       story2Quote: "Dopo anni di appuntamenti senza successo, ho finalmente incontrato la mia anima gemella grazie a Synchro.",
@@ -932,6 +941,7 @@ export const translations = {
     successStories: {
       title: "Истории любви, которые вдохновляют",
       subtitle: "Настоящие связи, настоящее счастье",
+      privacyProtected: "Защита данных",
       story1Quote: "Synchro помог мне найти человека, который по-настоящему понимает мои амбиции и поддерживает мои мечты.",
       story1Name: "Sarah M.", story1Title: "Предприниматель",
       story2Quote: "После многих лет неудачных свиданий я наконец встретил свою вторую половинку благодаря Synchro.",
@@ -1034,6 +1044,7 @@ export const translations = {
     successStories: {
       title: "قصص حب تلهم",
       subtitle: "روابط حقيقية، سعادة حقيقية",
+      privacyProtected: "الخصوصية محمية",
       story1Quote: "ساعدني Synchro في العثور على شخص يفهم طموحاتي حقًا ويدعم أحلامي.",
       story1Name: "Sarah M.", story1Title: "رائدة أعمال",
       story2Quote: "بعد سنوات من المواعدة غير الناجحة، التقيت أخيرًا بتوأم روحي من خلال التوفيق المدروس في Synchro.",
