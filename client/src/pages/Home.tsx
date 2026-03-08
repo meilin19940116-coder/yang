@@ -388,17 +388,19 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Privacy Policy Dialog */}
+     {/* Privacy Policy Dialog */}
       <Dialog open={privacyOpen} onOpenChange={setPrivacyOpen}>
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto rounded-3xl p-8">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-bold mb-4">Privacy Policy</DialogTitle>
+            <DialogTitle className="text-2xl font-bold mb-4">
+              {t.legal?.privacyTitle || "Privacy Policy"}
+            </DialogTitle>
           </DialogHeader>
           <div className="space-y-6 text-sm text-muted-foreground leading-relaxed">
-            <p><strong>1. Data Collection:</strong> We collect professional and personal information provided during the application process to ensure high-quality matching.</p>
-            <p><strong>2. Information Usage:</strong> Your data is used exclusively for facilitating introductions within the Synchro elite circle. We use bank-level encryption for all stored data.</p>
-            <p><strong>3. Third-Party Sharing:</strong> Your private contact details are never shared with third parties or advertisers without your explicit consent.</p>
-            <p><strong>4. Security:</strong> We implement strict technical and organizational measures to protect your information against unauthorized access.</p>
+            <p>{t.legal?.privacy1 || "1. Data Collection: We collect professional and personal information provided during the application process to ensure high-quality matching."}</p>
+            <p>{t.legal?.privacy2 || "2. Information Usage: Your data is used exclusively for facilitating introductions within the Synchro elite circle. We use bank-level encryption for all stored data."}</p>
+            <p>{t.legal?.privacy3 || "3. Third-Party Sharing: Your private contact details are never shared with third parties or advertisers without your explicit consent."}</p>
+            <p>{t.legal?.privacy4 || "4. Security: We implement strict technical and organizational measures to protect your information against unauthorized access."}</p>
           </div>
         </DialogContent>
       </Dialog>
@@ -407,13 +409,15 @@ export default function Home() {
       <Dialog open={termsOpen} onOpenChange={setTermsOpen}>
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto rounded-3xl p-8">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-bold mb-4">Terms of Service</DialogTitle>
+            <DialogTitle className="text-2xl font-bold mb-4">
+              {t.legal?.termsTitle || "Terms of Service"}
+            </DialogTitle>
           </DialogHeader>
           <div className="space-y-6 text-sm text-muted-foreground leading-relaxed">
-            <p><strong>1. Eligibility:</strong> Membership is restricted to professional individuals seeking serious connections. Users must be between the ages of 35 and 65.</p>
-            <p><strong>2. Verification:</strong> All applicants undergo a review process. We reserve the right to decline applications that do not meet our quality standards.</p>
-            <p><strong>3. Code of Conduct:</strong> Members agree to provide truthful background information and maintain professional decorum during introductions.</p>
-            <p><strong>4. Limitation of Liability:</strong> Synchro provides a boutique matchmaking service. While we vet all members, personal chemistry and relationship outcomes are individual.</p>
+            <p>{t.legal?.terms1 || "1. Eligibility: Membership is restricted to professional individuals seeking serious connections. Users must be between the ages of 35 and 65."}</p>
+            <p>{t.legal?.terms2 || "2. Verification: All applicants undergo a review process. We reserve the right to decline applications that do not meet our quality standards."}</p>
+            <p>{t.legal?.terms3 || "3. Code of Conduct: Members agree to provide truthful background information and maintain professional decorum during introductions."}</p>
+            <p>{t.legal?.terms4 || "4. Limitation of Liability: Synchro provides a boutique matchmaking service. While we vet all members, personal chemistry and relationship outcomes are individual."}</p>
           </div>
         </DialogContent>
       </Dialog>
