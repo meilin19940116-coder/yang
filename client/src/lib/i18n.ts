@@ -120,6 +120,23 @@ export const translations = {
       terms2: "2. Verification: All applicants undergo a review process. We reserve the right to decline applications that do not meet our quality standards.",
       terms3: "3. Code of Conduct: Members agree to provide truthful background information and maintain professional decorum during introductions.",
       terms4: "4. Limitation of Liability: Synchro provides a boutique matchmaking service. While we vet all members, personal chemistry and relationship outcomes are individual."
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      q1: "How is this different from apps like Tinder/Bumble?",
+      a1: "We are a genuine matchmaking platform with no mindless swiping. We match you precisely based on your personality, values, and lifestyle to help you find the most suitable partner and say goodbye to ineffective socialization.",
+      q2: "Are my personal information and photos safe?",
+      a2: "Absolutely safe. We take user privacy very seriously. Your profile is strictly confidential, used only for internal matching, and will never be shared or displayed publicly without your explicit consent.",
+      q3: "How long do I need to wait after submitting my application?",
+      a3: "Once you submit your profile, our smart system will immediately screen for the best fit. Upon a successful match, you will see your partner's profile right on the page and can contact them directly via WhatsApp.",
+      q4: "Is this matchmaking service free?",
+      a4: "100% free! Our mission is to help more people find true love. Matching and getting your partner's WhatsApp contact here will not cost you a single penny."
+    },
+    contact: {
+      londonHQ: "Synchro Matchmaker",
+      emailLabel: "Official Email",
+      needHelp: "Need Help? Chat with us",
+      copied: "Number Copied!"
     }
   },
   zh: {
@@ -235,6 +252,23 @@ export const translations = {
       terms2: "2. 审核机制：所有申请人都需经过审核。我们保留拒绝不符合我们质量标准的申请的权利。",
       terms3: "3. 行为准则：会员同意提供真实的背景信息，并在介绍过程中保持专业的礼仪。",
       terms4: "4. 责任限制：Synchro提供精品相亲服务。虽然我们会对所有会员进行审查，但个人的化学反应和关系结果因人而异。"
+    },
+    faq: {
+      title: "常见问题解答",
+      q1: "你们的服务和普通交友软件有什么区别？",
+      a1: "我们是一个真实的人工+AI匹配平台，没有无聊的左右滑动。我们会根据您的性格、价值观和生活方式，为您精准匹配最适合您的另一半，告别无效社交。",
+      q2: "我的个人信息和照片安全吗？",
+      a2: "绝对安全。我们非常重视用户的隐私保护。您的资料属于高度机密，仅用于内部匹配，未经您的明确同意，绝不会在互联网上公开展示或分享给任何第三方。",
+      q3: "提交申请后，我需要等待多久？",
+      a3: "您提交资料后，我们的智能系统和匹配团队会立即进行交叉筛选。匹配成功后，您将直接在页面上看到最适合您的对象资料，并可以直接通过 WhatsApp 加上对方开始聊天。",
+      q4: "这项匹配服务收费吗？",
+      a4: "完全免费！我们的宗旨是帮助更多人找到真爱。在这里进行匹配和获取对方的 WhatsApp 联系方式，不会收取您任何一分钱费用。"
+    },
+    contact: {
+      londonHQ: "Synchro 专属红娘",
+      emailLabel: "官方邮箱",
+      needHelp: "需要帮助？联系我们",
+      copied: "号码已复制"
     }
   },
   es: {
@@ -349,6 +383,23 @@ export const translations = {
       terms2: "2. Verificación: Todos los solicitantes pasan por un proceso de revisión. Nos reservamos el derecho de rechazar solicitudes que no cumplan con nuestros estándares.",
       terms3: "3. Código de conducta: Los miembros aceptan proporcionar información veraz y mantener un decoro profesional durante las presentaciones.",
       terms4: "4. Limitación de responsabilidad: Synchro ofrece un servicio de emparejamiento boutique. Aunque verificamos a los miembros, la química y los resultados son individuales."
+    },
+    faq: {
+      title: "Preguntas Frecuentes",
+      q1: "¿En qué se diferencia esto de aplicaciones como Tinder/Bumble?",
+      a1: "Somos una plataforma de emparejamiento genuina sin los aburridos deslizamientos. Te emparejamos con precisión según tu personalidad, valores y estilo de vida para ayudarte a encontrar la pareja ideal.",
+      q2: "¿Están seguros mis datos personales y fotos?",
+      a2: "Absolutamente seguros. Nos tomamos muy en serio la privacidad. Tu perfil es estrictamente confidencial, se usa solo para el emparejamiento interno y nunca se compartirá públicamente.",
+      q3: "¿Cuánto debo esperar después de enviar mi solicitud?",
+      a3: "Una vez que envías tu perfil, nuestro sistema filtra inmediatamente a la mejor opción. Al coincidir, verás el perfil de tu pareja en la pantalla y podrás contactarla directamente por WhatsApp.",
+      q4: "¿Este servicio es gratuito?",
+      a4: "¡100% gratis! Nuestra misión es ayudar a más personas a encontrar el amor. Emparejarte y obtener el WhatsApp de tu pareja no te costará ni un centavo."
+    },
+    contact: {
+      londonHQ: "Matchmaker de Synchro",
+      emailLabel: "Correo Oficial",
+      needHelp: "¿Necesitas ayuda? Chatea con nosotros",
+      copied: "¡Número copiado!"
     }
   },
   pt: {
@@ -463,6 +514,23 @@ export const translations = {
       terms2: "2. Verificação: Todos os candidatos passam por um processo de revisão. Reservamo-nos o direito de recusar inscrições que não atendam aos nossos padrões de qualidade.",
       terms3: "3. Código de Conduta: Os membros concordam em fornecer informações de fundo verdadeiras e manter o decoro profissional durante as apresentações.",
       terms4: "4. Limitação de Responsabilidade: A Synchro oferece um serviço de matchmaking boutique. Embora verifiquemos todos os membros, a química pessoal e os resultados do relacionamento são individuais."
+    },
+    faq: {
+      title: "Perguntas Frequentes",
+      q1: "Como isso é diferente de aplicativos como Tinder/Bumble?",
+      a1: "Somos uma plataforma de matchmaking genuína, sem os chatos deslizamentos. Nós te conectamos com precisão com base na sua personalidade, valores e estilo de vida para encontrar o parceiro ideal.",
+      q2: "Minhas informações pessoais e fotos estão seguras?",
+      a2: "Absolutamente seguras. Levamos a privacidade muito a sério. Seu perfil é estritamente confidencial, usado apenas para matchmaking interno, e nunca será compartilhado publicamente.",
+      q3: "Quanto tempo preciso esperar após enviar minha inscrição?",
+      a3: "Assim que você enviar seu perfil, nosso sistema filtrará imediatamente a melhor opção. Após o match, você verá o perfil do seu parceiro na tela e poderá contatá-lo diretamente pelo WhatsApp.",
+      q4: "Este serviço de matchmaking é gratuito?",
+      a4: "100% grátis! Nossa missão é ajudar mais pessoas a encontrar o amor verdadeiro. Conseguir o WhatsApp do seu match não custará um único centavo."
+    },
+    contact: {
+      londonHQ: "Matchmaker da Synchro",
+      emailLabel: "E-mail Oficial",
+      needHelp: "Precisa de ajuda? Fale connosco",
+      copied: "Número copiado!"
     }
   },
   ja: {
@@ -578,6 +646,23 @@ export const translations = {
       terms2: "2. 審査: すべての応募者は審査プロセスを受けます。当社の品質基準を満たさない応募を拒否する権利を留保します。",
       terms3: "3. 行動規範: メンバーは、真実の背景情報を提供し、紹介中は専門的な礼儀を保つことに同意するものとします。",
       terms4: "4. 責任の制限: Synchroはブティック型のマッチングサービスを提供します。全メンバーを審査しますが、個人的な相性や関係の結果は個人の責任となります。"
+    },
+    faq: {
+      title: "よくある質問",
+      q1: "TinderやBumbleなどのアプリと何が違いますか？",
+      a1: "私たちは無意味なスワイプのない、本物のマッチングプラットフォームです。性格、価値観、ライフスタイルに基づいて正確にマッチングし、最適なパートナーを見つけるお手伝いをします。",
+      q2: "個人情報や写真は安全ですか？",
+      a2: "絶対に安全です。私たちはユーザーのプライバシーを非常に重視しています。プロフィールは厳秘とされ、内部のマッチングにのみ使用され、公開されることはありません。",
+      q3: "申請後、どれくらい待つ必要がありますか？",
+      a3: "プロフィールを送信すると、システムがすぐに最適な相手をスクリーニングします。マッチングが成功すると、画面上に相手のプロフィールが表示され、WhatsAppで直接連絡できます。",
+      q4: "このサービスは無料ですか？",
+      a4: "完全無料です！私たちの使命は、より多くの人が真実の愛を見つけるのを助けることです。マッチングや相手のWhatsApp番号を取得するのに料金は一切かかりません。"
+    },
+    contact: {
+      londonHQ: "Synchro マッチメーカー",
+      emailLabel: "公式メール",
+      needHelp: "お困りですか？チャットで相談",
+      copied: "番号をコピーしました"
     }
   },
   ko: {
@@ -693,6 +778,23 @@ export const translations = {
       terms2: "2. 검증: 모든 지원자는 심사 과정을 거칩니다. 당사는 품질 기준을 충족하지 않는 지원을 거부할 권리가 있습니다.",
       terms3: "3. 행동 규범: 회원은 진실된 배경 정보를 제공하고 소개 과정에서 전문적인 품위를 유지하는 데 동의합니다.",
       terms4: "4. 책임 제한: Synchro는 부티크 매치메이킹 서비스를 제공합니다. 모든 회원을 심사하지만 개인적인 케미스트리와 관계의 결과는 개인에 따라 다릅니다."
+    },
+    faq: {
+      title: "자주 묻는 질문",
+      q1: "Tinder나 Bumble 같은 앱과 무엇이 다른가요?",
+      a1: "우리는 의미 없는 스와이프가 없는 진정한 매치메이킹 플랫폼입니다. 성격, 가치관, 라이프스타일을 바탕으로 정확하게 매칭하여 가장 적합한 파트너를 찾도록 돕습니다.",
+      q2: "내 개인 정보와 사진은 안전한가요?",
+      a2: "절대적으로 안전합니다. 우리는 사용자의 프라이버시를 매우 중요하게 생각합니다. 귀하의 프로필은 엄격히 기밀로 유지되며 내부 매칭에만 사용됩니다.",
+      q3: "신청서를 제출한 후 얼마나 기다려야 하나요?",
+      a3: "프로필을 제출하면 시스템이 즉시 가장 적합한 상대를 선별합니다. 매칭에 성공하면 화면에서 상대방의 프로필을 바로 확인하고 WhatsApp을 통해 직접 연락할 수 있습니다.",
+      q4: "이 매칭 서비스는 무료인가요?",
+      a4: "100% 무료입니다! 우리의 사명은 더 많은 사람들이 진정한 사랑을 찾도록 돕는 것입니다. 매칭하고 상대방의 WhatsApp 연락처를 얻는 데 단 한 푼도 들지 않습니다."
+    },
+    contact: {
+      londonHQ: "Synchro 매치메이커",
+      emailLabel: "공식 이메일",
+      needHelp: "도움이 필요하신가요? 상담하기",
+      copied: "번호가 복사되었습니다"
     }
   },
   fr: {
@@ -808,6 +910,23 @@ export const translations = {
       terms2: "2. Vérification : Tous les candidats passent par un processus d'examen. Nous nous réservons le droit de refuser les candidatures qui ne répondent pas à nos normes de qualité.",
       terms3: "3. Code de conduite : Les membres acceptent de fournir des informations de fond véridiques et de maintenir un décorum professionnel pendant les présentations.",
       terms4: "4. Limitation de responsabilité : Synchro fournit un service de matchmaking boutique. Bien que nous vérifions tous les membres, l'alchimie personnelle et les résultats de la relation sont individuels."
+    },
+    faq: {
+      title: "Questions Fréquemment Posées",
+      q1: "En quoi est-ce différent des applications comme Tinder/Bumble ?",
+      a1: "Nous sommes une véritable plateforme de matchmaking, sans balayages interminables. Nous vous associons précisément en fonction de votre personnalité et de votre style de vie pour trouver le partenaire idéal.",
+      q2: "Mes informations personnelles sont-elles en sécurité ?",
+      a2: "Absolument. Nous prenons la confidentialité très au sérieux. Votre profil est strictement confidentiel, utilisé uniquement pour le matchmaking interne, et ne sera jamais affiché publiquement.",
+      q3: "Combien de temps dois-je attendre après avoir soumis ma candidature ?",
+      a3: "Dès que vous soumettez votre profil, notre système recherche immédiatement la meilleure correspondance. Une fois trouvée, vous verrez le profil de votre partenaire et pourrez le contacter directement via WhatsApp.",
+      q4: "Ce service est-il gratuit ?",
+      a4: "100% gratuit ! Notre mission est d'aider plus de personnes à trouver l'amour. Obtenir le contact WhatsApp de votre partenaire ne vous coûtera absolument rien."
+    },
+    contact: {
+      londonHQ: "Matchmaker de Synchro",
+      emailLabel: "Email Officiel",
+      needHelp: "Besoin d'aide ? Discutez avec nous",
+      copied: "Numéro copié !"
     }
   },
   de: {
@@ -923,6 +1042,23 @@ export const translations = {
       terms2: "2. Überprüfung: Alle Bewerber durchlaufen einen Überprüfungsprozess. Wir behalten uns das Recht vor, Bewerbungen abzulehnen, die unseren Qualitätsstandards nicht entsprechen.",
       terms3: "3. Verhaltenskodex: Die Mitglieder stimmen zu, wahrheitsgemäße Hintergrundinformationen bereitzustellen und während der Vorstellungen professionellen Anstand zu wahren.",
       terms4: "4. Haftungsbeschränkung: Synchro bietet einen Boutique-Matchmaking-Service. Während wir alle Mitglieder überprüfen, sind persönliche Chemie und Beziehungsergebnisse individuell."
+    },
+    faq: {
+      title: "Häufig Gestellte Fragen",
+      q1: "Wie unterscheidet sich das von Apps wie Tinder/Bumble?",
+      a1: "Wir sind eine echte Matchmaking-Plattform ohne endloses Swipen. Wir matchen Sie präzise basierend auf Ihrer Persönlichkeit, Ihren Werten und Ihrem Lebensstil, um den passenden Partner zu finden.",
+      q2: "Sind meine persönlichen Daten und Fotos sicher?",
+      a2: "Absolut sicher. Wir nehmen den Datenschutz sehr ernst. Ihr Profil ist streng vertraulich, wird nur für internes Matchmaking verwendet und niemals öffentlich zugänglich gemacht.",
+      q3: "Wie lange muss ich nach dem Absenden warten?",
+      a3: "Sobald Sie Ihr Profil einreichen, sucht unser System sofort nach dem besten Match. Bei Erfolg sehen Sie das Profil Ihres Partners auf dem Bildschirm und können ihn direkt über WhatsApp kontaktieren.",
+      q4: "Ist dieser Service kostenlos?",
+      a4: "100% kostenlos! Unsere Mission ist es, mehr Menschen zu helfen, die wahre Liebe zu finden. Das Matchmaking und der Erhalt des WhatsApp-Kontakts kosten Sie keinen einzigen Cent."
+    },
+    contact: {
+      londonHQ: "Synchro Matchmaker",
+      emailLabel: "Offizielle E-Mail",
+      needHelp: "Brauchen Sie Hilfe? Kontaktieren Sie uns",
+      copied: "Nummer kopiert!"
     }
   },
   it: {
@@ -1038,6 +1174,23 @@ export const translations = {
       terms2: "2. Verifica: Tutti i candidati sono sottoposti a un processo di revisione. Ci riserviamo il diritto di rifiutare le candidature che non soddisfano i nostri standard di qualità.",
       terms3: "3. Codice di condotta: I membri accettano di fornire informazioni di base veritiere e di mantenere un decoro professionale durante le presentazioni.",
       terms4: "4. Limitazione di responsabilità: Synchro fornisce un servizio di matchmaking boutique. Sebbene esaminiamo tutti i membri, la chimica personale e i risultati relazionali sono individuali."
+    },
+    faq: {
+      title: "Domande Frequenti",
+      q1: "In che modo è diverso da app come Tinder/Bumble?",
+      a1: "Siamo una vera piattaforma di matchmaking senza scorrimenti infiniti. Ti abbiniamo con precisione in base alla tua personalità, ai tuoi valori e al tuo stile di vita per trovare il partner ideale.",
+      q2: "I miei dati personali e le mie foto sono al sicuro?",
+      a2: "Assolutamente sicuri. Prendiamo molto sul serio la privacy. Il tuo profilo è strettamente riservato, utilizzato solo per il matchmaking interno e non sarà mai mostrato pubblicamente.",
+      q3: "Quanto devo aspettare dopo aver inviato la mia candidatura?",
+      a3: "Non appena invii il tuo profilo, il nostro sistema cerca immediatamente la migliore corrispondenza. Una volta trovato, vedrai il profilo del tuo partner e potrai contattarlo direttamente via WhatsApp.",
+      q4: "Questo servizio è gratuito?",
+      a4: "100% gratuito! La nostra missione è aiutare più persone a trovare il vero amore. Ottenere il contatto WhatsApp del tuo partner non ti costerà un solo centesimo."
+    },
+    contact: {
+      londonHQ: "Matchmaker di Synchro",
+      emailLabel: "Email Ufficiale",
+      needHelp: "Hai bisogno di aiuto? Chat con noi",
+      copied: "Numero copiato!"
     }
   },
   ru: {
@@ -1153,6 +1306,23 @@ export const translations = {
       terms2: "2. Проверка: Все кандидаты проходят процесс проверки. Мы оставляем за собой право отклонять заявки, не соответствующие нашим стандартам качества.",
       terms3: "3. Кодекс поведения: Участники соглашаются предоставлять правдивую информацию о себе и соблюдать профессиональный этикет во время знакомств.",
       terms4: "4. Ограничение ответственности: Synchro предоставляет бутиковые услуги по подбору пары. Хотя мы проверяем всех участников, личная химия и результаты отношений индивидуальны."
+    },
+    faq: {
+      title: "Часто задаваемые вопросы",
+      q1: "Чем это отличается от таких приложений, как Tinder/Bumble?",
+      a1: "Мы — настоящая платформа для знакомств без бессмысленных свайпов. Мы точно подбираем вам пару на основе вашего характера, ценностей и образа жизни, чтобы найти идеального партнера.",
+      q2: "В безопасности ли мои личные данные и фотографии?",
+      a2: "Абсолютно безопасны. Мы очень серьезно относимся к конфиденциальности. Ваш профиль строго конфиденциален, используется только для внутреннего подбора и никогда не будет показан публично.",
+      q3: "Как долго мне нужно ждать после подачи заявки?",
+      a3: "Как только вы отправите свой профиль, наша система немедленно подберет лучший вариант. При успешном совпадении вы увидите профиль партнера на экране и сможете написать ему в WhatsApp.",
+      q4: "Эта услуга бесплатна?",
+      a4: "100% бесплатно! Наша миссия — помочь большему количеству людей найти настоящую любовь. Получение WhatsApp вашего партнера не будет стоить вам ни копейки."
+    },
+    contact: {
+      londonHQ: "Сваха Synchro",
+      emailLabel: "Официальный email",
+      needHelp: "Нужна помощь? Напишите нам",
+      copied: "Номер скопирован!"
     }
   },
   ar: {
@@ -1268,6 +1438,23 @@ export const translations = {
       terms2: "2. التحقق: يخضع جميع المتقدمين لعملية مراجعة. نحتفظ بالحق في رفض الطلبات التي لا تلبي معايير الجودة لدينا.",
       terms3: "3. قواعد السلوك: يوافق الأعضاء على تقديم معلومات أساسية صادقة والحفاظ على اللياقة المهنية أثناء التقديمات.",
       terms4: "4. حدود المسؤولية: تقدم Synchro خدمة توفيق بوتيك. بينما نقوم بفحص جميع الأعضاء، فإن الكيمياء الشخصية ونتائج العلاقة فردية."
+    },
+    faq: {
+      title: "الأسئلة الشائعة",
+      q1: "كيف يختلف هذا عن تطبيقات مثل Tinder أو Bumble؟",
+      a1: "نحن منصة توفيق حقيقية بدون تمرير لا نهاية له. نقوم بمطابقتك بدقة بناءً على شخصيتك وقيمك وأسلوب حياتك لمساعدتك في العثور على الشريك الأنسب.",
+      q2: "هل معلوماتي الشخصية وصوري آمنة؟",
+      a2: "آمنة تمامًا. نحن نأخذ خصوصية المستخدم على محمل الجد. ملفك الشخصي سري للغاية، ويستخدم فقط للمطابقة الداخلية، ولن يتم عرضه للجمهور أبدًا.",
+      q3: "كم من الوقت أحتاج للانتظار بعد تقديم طلبي؟",
+      a3: "بمجرد إرسال ملفك الشخصي، سيقوم نظامنا فورًا بالبحث عن أفضل تطابق. عند النجاح، سترى ملف تعريف شريكك على الشاشة ويمكنك الاتصال به مباشرة عبر WhatsApp.",
+      q4: "هل هذه الخدمة مجانية؟",
+      a4: "مجانية 100%! مهمتنا هي مساعدة المزيد من الناس في العثور على الحب الحقيقي. الحصول على اتصال WhatsApp الخاص بشريكك لن يكلفك فلسًا واحدًا."
+    },
+    contact: {
+      londonHQ: "خبير تنسيق سينكرو",
+      emailLabel: "البريد الرسمي",
+      needHelp: "هل تحتاج مساعدة؟ تحدث معنا",
+      copied: "تم نسخ الرقم!"
     }
   }
 };
