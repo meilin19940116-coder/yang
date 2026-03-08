@@ -8,7 +8,8 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Globe, Menu, X, ShieldCheck } from 'lucide-react'; 
+import { Globe, Menu, X, ShieldCheck, MessageCircle, Mail } from 'lucide-react'; 
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
   Select,
   SelectContent,
@@ -36,6 +37,7 @@ export default function Home() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
   const [termsOpen, setTermsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
+  const [supportCopied, setSupportCopied] = useState(false);
 
   // 👇 --- 从这里开始加您的 11个案例大池子 --- 👇
   const allSuccessStories = [
@@ -66,6 +68,18 @@ export default function Home() {
     setTimeout(() => {
       document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
+  };
+  const handleSupportConnect = () => {
+    const supportNumber = "447902187293"; // 您的英国客服号
+    
+    // 1. 自动复制到剪贴板 (兼容 TikTok)
+    navigator.clipboard.writeText(supportNumber).then(() => {
+      setSupportCopied(true);
+      setTimeout(() => setSupportCopied(false), 2000); // 2秒后小气泡消失
+    });
+
+    // 2. 正常跳转 (如果浏览器不拦截就直接跳了)
+    // 这里不需要写代码，<a> 标签自带的 href 会处理跳转
   };
 
   return (
@@ -340,53 +354,108 @@ export default function Home() {
         </section>
       )}
 
-      {/* Footer */}
-      <footer className="py-16 bg-card border-t border-border">
-        <div className="container px-4 md:px-6">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="md:col-span-1">
-              {/* 【页脚修改点】移除了 Logo 图片，只保留文字 */}
-              <h3 className="text-2xl font-bold text-primary mb-4 tracking-tight">Synchro</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{t.footer.tagline}</p>
-            </div>
-            
-            <div>
-              <h4 className="font-bold mb-6 text-foreground">{t.nav.about}</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li><a href="#why-us" className="hover:text-primary transition-colors block py-1">{t.whyUs.title}</a></li>
-                <li><a href="#how-it-works" className="hover:text-primary transition-colors block py-1">{t.howItWorks.title}</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-bold mb-6 text-foreground">{t.footer.contact}</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li>
-                  <button onClick={() => setPrivacyOpen(true)} className="hover:text-primary transition-colors text-left block py-1">
-                    {t.footer.privacy}
-                  </button>
-                </li>
-                <li>
-                  <button onClick={() => setTermsOpen(true)} className="hover:text-primary transition-colors text-left block py-1">
-                    {t.footer.terms}
-                  </button>
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-bold mb-6 text-foreground">{t.nav.apply}</h4>
-              <Button onClick={scrollToForm} className="w-full h-12 text-lg shadow-lg">
-                {t.hero.cta}
-              </Button>
-            </div>
+      {/* FAQ Section */}
+      <section className="py-24 bg-card/30">
+        <div className="container max-w-3xl">
+          <div className="text-center mb-12 fade-in-up">
+            <h2 className="text-3xl font-bold mb-4">{t.faq?.title || "Frequently Asked Questions"}</h2>
+          </div>
+          <Accordion type="single" collapsible className="w-full fade-in-up">
+            <AccordionItem value="item-1" className="border-b border-border/50">
+              <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline hover:text-primary transition-colors">{t.faq?.q1}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground leading-relaxed text-base pt-2 pb-6">{t.faq?.a1}</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2" className="border-b border-border/50">
+              <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline hover:text-primary transition-colors">{t.faq?.q2}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground leading-relaxed text-base pt-2 pb-6">{t.faq?.a2}</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3" className="border-b border-border/50">
+              <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline hover:text-primary transition-colors">{t.faq?.q3}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground leading-relaxed text-base pt-2 pb-6">{t.faq?.a3}</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4" className="border-none">
+              <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline hover:text-primary transition-colors">{t.faq?.q4}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground leading-relaxed text-base pt-2 pb-6">{t.faq?.a4}</AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Footer with Contact & Legal */}
+      <footer className="py-12 bg-card border-t border-border">
+        <div className="container max-w-6xl flex flex-col items-center">
+          <div className="flex items-center gap-2 mb-8">
+            <span className="text-2xl font-bold text-primary tracking-tight">
+              Synchro
+            </span>
           </div>
           
-          <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground/60">
-            <p>{t.footer.copyright}</p>
+          {/* 👇 修改后的页脚联系区域 👇 */}
+          <div className="flex gap-8 mb-8">
+            {/* WhatsApp 客服：带复制功能 */}
+            <div className="relative group">
+              <a 
+                href="https://wa.me/447902187293" 
+                onClick={handleSupportConnect}
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-muted-foreground hover:text-green-500 transition-colors bg-muted p-4 rounded-full flex flex-col items-center gap-2"
+              >
+                <MessageCircle className="w-6 h-6" />
+                <span className="text-[10px] font-bold">{t.contact?.londonHQ || "Synchro London"}</span>
+              </a>
+              {/* 复制成功小提示 */}
+              {supportCopied && (
+                <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-green-500 text-white text-[10px] px-2 py-1 rounded shadow-lg animate-bounce">
+                  {t.contact?.copied || "Copied!"}
+                </div>
+              )}
+            </div>
+
+            {/* 官方邮箱：请把下面的邮箱换成您真实的 */}
+            <a href="mailto:concierge@synchro-match.com" className="text-muted-foreground hover:text-primary transition-colors bg-muted p-4 rounded-full flex flex-col items-center gap-2">
+              <Mail className="w-6 h-6" />
+              <span className="text-[10px] font-bold">{t.contact?.emailLabel || "Official Email"}</span>
+            </a>
           </div>
+
+          <div className="flex gap-6 mb-8 text-sm text-muted-foreground">
+            <button onClick={() => setPrivacyOpen(true)} className="hover:text-primary transition-colors cursor-pointer">
+              {t.footer.privacy}
+            </button>
+            <button onClick={() => setTermsOpen(true)} className="hover:text-primary transition-colors cursor-pointer">
+              {t.footer.terms}
+            </button>
+          </div>
+
+          <p className="text-sm text-muted-foreground/60 text-center">
+            {t.footer.copyright}
+          </p>
         </div>
       </footer>
+
+      {/* 👇 修改后的右下角悬浮按钮 👇 */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+        {/* 点击后飘出的黑底白字提示 */}
+        {supportCopied && (
+          <div className="bg-black/80 text-white text-xs px-3 py-1.5 rounded-lg shadow-xl mb-2 animate-in fade-in slide-in-from-bottom-2">
+            {t.contact?.copied || "Number Copied!"}
+          </div>
+        )}
+        <a 
+          href="https://wa.me/447902187293" 
+          onClick={handleSupportConnect}
+          target="_blank" 
+          rel="noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
+        >
+          <MessageCircle className="w-8 h-8" />
+          {/* 鼠标悬停提示 */}
+          <span className="absolute right-full mr-4 bg-black/80 text-white text-xs font-bold px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+            {t.contact?.needHelp || "Need Help? Chat with us"}
+          </span>
+        </a>
+      </div>
 
      {/* Privacy Policy Dialog */}
       <Dialog open={privacyOpen} onOpenChange={setPrivacyOpen}>
