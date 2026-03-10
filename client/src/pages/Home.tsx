@@ -151,14 +151,6 @@ export default function Home() {
     return <SafePage />;
   }
 
-  // 正常返回您的“金页”内容
-  return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* ... 您原本的 Navigation, Hero, Why Us 等所有 return 里的代码 ... */}
-    </div>
-  );
-} // ⚠️ 这里确保只有一个右大括号结束函数！
-
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Navigation */}
