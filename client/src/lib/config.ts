@@ -171,7 +171,7 @@ export const personaPool = [
       return pickRandom(this.whatsappNumbers); 
     }
   }
-
+];
 // 【极重要】为了兼容 Home.tsx 等旧页面，保留这一行
 export const personaConfig = personaPool[0];
 
