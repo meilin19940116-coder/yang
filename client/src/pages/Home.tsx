@@ -1,10 +1,3 @@
-/**
- * Synchro - Home Page (Logo Updated)
- * 1. 【Logo 调整】导航栏 Logo 显示原色 (无滤镜)，尺寸加大至 h-10 md:h-12。
- * 2. 【页脚调整】页脚移除 Logo 图片，只保留纯文字。
- * 3. 【完整保留】Hero z-30 层级修复、汉堡菜单、多语言等所有原有代码。
- */
-
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -31,43 +24,6 @@ import {
 import { translations } from '@/lib/i18n';
 import ApplicationForm from '@/components/ApplicationForm';
 
-const SafePage = () => (
-  <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8 font-sans">
-    <div className="max-w-2xl text-center space-y-8">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
-          <ShieldCheck className="w-10 h-10 text-primary" />
-        </div>
-        <h1 className="text-4xl font-bold text-gray-900 tracking-tight">Synchro Elite Consulting</h1>
-        <p className="text-primary font-medium tracking-widest uppercase text-sm">London • Bespoke • Excellence</p>
-      </div>
-      
-      <div className="h-px bg-gray-100 w-full" />
-      
-      <p className="text-lg text-gray-600 leading-relaxed">
-        Synchro provides bespoke lifestyle management and professional networking services for elite individuals in London. 
-        We specialize in high-end social concierge and corporate introduction services, 
-        connecting modern professionals through high-value social circles.
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-        <div className="p-6 bg-gray-50 rounded-2xl text-left border border-gray-100">
-          <h3 className="font-bold text-gray-900 mb-2">Social Concierge</h3>
-          <p className="text-sm text-gray-500">Access to the most exclusive social circles and private events in the UK.</p>
-        </div>
-        <div className="p-6 bg-gray-50 rounded-2xl text-left border border-gray-100">
-          <h3 className="font-bold text-gray-900 mb-2">Corporate Networking</h3>
-          <p className="text-sm text-gray-500">Connecting global professionals through curated high-value introductions.</p>
-        </div>
-      </div>
-
-      <p className="text-xs text-gray-400 pt-12">
-        © 2024 Synchro Consulting Group. Authorized and regulated lifestyle management services.
-      </p>
-    </div>
-  </div>
-);
-
 export default function Home() {
   const { language, setLanguage, t } = useLanguage();
   const [showForm, setShowForm] = useState(false);
@@ -75,11 +31,7 @@ export default function Home() {
   const [termsOpen, setTermsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
   const [supportCopied, setSupportCopied] = useState(false);
-  
-  // 1. 斗篷状态：默认先设为 true (给审核员看)
-  const [isBotOrReviewer, setIsBotOrReviewer] = useState(true); 
 
-  // 2. 所有原本在后面的 Hooks 必须提到判断之前！
   const allSuccessStories = [
     { id: 1, img: "/images/success-1.jpg", quote: t.successStories?.story1Quote, name: t.successStories?.story1Name, role: t.successStories?.story1Title },
     { id: 2, img: "/images/success-2.jpg", quote: t.successStories?.story2Quote, name: t.successStories?.story2Name, role: t.successStories?.story2Title },
@@ -96,26 +48,11 @@ export default function Home() {
 
   const [displayStories, setDisplayStories] = useState<any[]>([]);
 
-  // 3. 身份识别逻辑
-  useEffect(() => {
-    const ua = navigator.userAgent.toLowerCase();
-    const urlParams = new URLSearchParams(window.location.search);
-    const isTikTokApp = ua.includes('musical_ly') || ua.includes('tiktok') || ua.includes('byte');
-    const isMobile = /iphone|ipad|ipod|android/i.test(ua);
-    const hasSecretKey = urlParams.get('v') === '1' || urlParams.has('ttclid');
-
-    if ((isTikTokApp && isMobile) || hasSecretKey) {
-      setIsBotOrReviewer(false); 
-    }
-  }, []);
-
-  // 4. 成功案例打乱逻辑
   useEffect(() => {
     const shuffled = [...allSuccessStories].sort(() => 0.5 - Math.random());
     setDisplayStories(shuffled.slice(0, 3));
   }, [language, t]); 
 
-  // 5. 辅助函数
   const scrollToForm = () => {
     setShowForm(true);
     setMobileMenuOpen(false); 
@@ -145,11 +82,6 @@ export default function Home() {
       window.location.href = `https://wa.me/${supportNumber}`;
     });
   };
-
-  // 🛑 核心修复：在这里做 A/B 面切换判断
-  if (isBotOrReviewer) {
-    return <SafePage />;
-  }
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
