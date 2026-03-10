@@ -68,7 +68,7 @@ export const personaPool = [
     }
   },
 
-  // ------------------ 人设 2：Jesse (新业务员) ------------------
+  // ------------------ 人设 2：Jesse ------------------
  {
     id: "jesse",
     name: "Jesse",
@@ -114,13 +114,13 @@ export const personaPool = [
     },
     images: ["/images/4.jpg", "/images/5.jpg", "/images/6.jpg"],
     // 专属号码池
-    whatsappNumbers: ["447935181351"], 
+    whatsappNumbers: ["447999604025"], 
     get whatsappNumber() { 
       return pickRandom(this.whatsappNumbers); 
     }
   },
 
-  // ------------------ 人设 3：Elsa (新业务员) ------------------
+  // ------------------ 人设 3：Elsa ------------------
   {
     id: "elsa",
     name: "Elsa",
@@ -172,6 +172,7 @@ export const personaPool = [
     }
   }
 ];
+
 // 【极重要】为了兼容 Home.tsx 等旧页面，保留这一行
 export const personaConfig = personaPool[0];
 
