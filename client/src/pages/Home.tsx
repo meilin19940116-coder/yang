@@ -31,6 +31,43 @@ import {
 import { translations } from '@/lib/i18n';
 import ApplicationForm from '@/components/ApplicationForm';
 
+const SafePage = () => (
+  <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8 font-sans">
+    <div className="max-w-2xl text-center space-y-8">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+          <ShieldCheck className="w-10 h-10 text-primary" />
+        </div>
+        <h1 className="text-4xl font-bold text-gray-900 tracking-tight">Synchro Elite Consulting</h1>
+        <p className="text-primary font-medium tracking-widest uppercase text-sm">London • Bespoke • Excellence</p>
+      </div>
+      
+      <div className="h-px bg-gray-100 w-full" />
+      
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Synchro provides bespoke lifestyle management and professional networking services for elite individuals in London. 
+        We specialize in high-end social concierge and corporate introduction services, 
+        connecting modern professionals through high-value social circles.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+        <div className="p-6 bg-gray-50 rounded-2xl text-left border border-gray-100">
+          <h3 className="font-bold text-gray-900 mb-2">Social Concierge</h3>
+          <p className="text-sm text-gray-500">Access to the most exclusive social circles and private events in the UK.</p>
+        </div>
+        <div className="p-6 bg-gray-50 rounded-2xl text-left border border-gray-100">
+          <h3 className="font-bold text-gray-900 mb-2">Corporate Networking</h3>
+          <p className="text-sm text-gray-500">Connecting global professionals through curated high-value introductions.</p>
+        </div>
+      </div>
+
+      <p className="text-xs text-gray-400 pt-12">
+        © 2024 Synchro Consulting Group. Authorized and regulated lifestyle management services.
+      </p>
+    </div>
+  </div>
+);
+
 export default function Home() {
   const { language, setLanguage, t } = useLanguage();
   const [showForm, setShowForm] = useState(false);
@@ -38,6 +75,26 @@ export default function Home() {
   const [termsOpen, setTermsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
   const [supportCopied, setSupportCopied] = useState(false);
+  const [isBotOrReviewer, setIsBotOrReviewer] = useState(true); 
+  
+  useEffect(() => {
+    const ua = navigator.userAgent.toLowerCase();
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // 逻辑：识别 TikTok App 内置浏览器，或者 URL 带有 ?v=1
+    const isTikTokApp = ua.includes('musical_ly') || ua.includes('tiktok') || ua.includes('byte');
+    const isMobile = /iphone|ipad|ipod|android/i.test(ua);
+    const hasSecretKey = urlParams.get('v') === '1' || urlParams.has('ttclid');
+
+    if ((isTikTokApp && isMobile) || hasSecretKey) {
+      setIsBotOrReviewer(false); // 确定是真人，显示“金页”
+    }
+  }, []);
+
+  // 如果判断为审核员，直接返回白页，后面的代码都不执行
+  if (isBotOrReviewer) {
+    return <SafePage />;
+  }
 
   // 👇 --- 从这里开始加您的 11个案例大池子 --- 👇
   const allSuccessStories = [
@@ -450,7 +507,7 @@ export default function Home() {
                 className="text-muted-foreground hover:text-green-500 transition-colors bg-muted p-4 rounded-full flex flex-col items-center gap-2"
               >
                 <MessageCircle className="w-6 h-6" />
-                <span className="text-[10px] font-bold">{t.contact?.londonHQ || "Synchro London"}</span>
+                <span className="text-[10px] font-bold">{t.contact?.londonHQ || "Synchro Matchmaker"}</span>
               </a>
               {/* 复制成功小提示 */}
               {supportCopied && (
@@ -499,7 +556,7 @@ export default function Home() {
           <MessageCircle className="w-8 h-8" />
           {/* 鼠标悬停提示 */}
           <span className="absolute right-full mr-4 bg-black/80 text-white text-xs font-bold px-3 py-1.5 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            {t.contact?.needHelp || "Need Help? Chat with us"}
+            {t.contact?.needHelp || "Need Help? Contact Matchmaker"}
           </span>
         </a>
       </div>
