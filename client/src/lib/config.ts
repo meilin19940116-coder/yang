@@ -16,53 +16,53 @@ function pickRandom(list: string[]) {
 // 多人设配置池 (Persona Pool)
 // =================================================================
 export const personaPool = [
-  // ------------------ 人设 1：Simone (您和朋友共用号码) ------------------
+  // ------------------ 人设 1：Mia (新媒体运营 & PR) ------------------
   {
-    id: "simone",
-    name: "Simone",
-    age: 32,
+    id: "mia",
+    name: "Mia",
+    age: 31,
     title: {
-      en: "Interior Designer",
-      zh: "室内设计师",
-      es: "Decorador de interiores",
-      pt: "Designer de Interiores",
-      ja: "インテリアデザイナー",
-      ko: "인테리어 디자이너",
-      fr: "décorateur d'intérieur",
-      de: "Innenarchitektin",
-      it: "Architetto d'interni",
-      ru: "Дизайнер интерьеров",
-      ar: "مصمم داخلي"
+      en: "New Media Manager & PR",
+      zh: "新媒体运营 & 公关",
+      es: "Especialista en Nuevos Medios y RR.PP.",
+      pt: "Gestora de Novas Mídias e RP",
+      ja: "ニューメディア運営＆PR",
+      ko: "뉴미디어 운영 및 PR",
+      fr: "Responsable Nouveaux Médias & RP",
+      de: "Social Media Managerin & PR",
+      it: "Manager dei Nuovi Media & PR",
+      ru: "Менеджер новых медиа и PR",
+      ar: "مديرة الإعلام الرقمي والعلاقات العامة"
     },
     bio: {
-      en: "I'm from London, England, and I love design. I look forward to meaningful connections. I believe true love is built on understanding and shared values.",
-      zh: "我来自英国伦敦，热爱设计,期待有灵魂的碰撞。我相信真爱建立在理解包容和共同价值观之上。",
-      es: "Soy de Londres, Inglaterra, y me encanta el diseño. Creo que el amor verdadero se basa en la comprensión y los valores compartidos.",
-      pt: "Sou de Londres, Inglaterra, e adoro design. Acredito que o amor verdadeiro se constrói sobre compreensão e valores partilhados.",
-      ja: "イギリスのロンドン出身で、デザインが大好きです。真の愛は、理解と共通の価値観の上に築かれると信じています。",
-      ko: "저는 영국 런던 출신이고 디자인을 좋아합니다. 진정한 사랑은 이해와 공유된 가치관을 바탕으로 한다고 믿습니다.",
-      fr: "Je viens de Londres et je suis passionnée de design. Je crois que le véritable amour repose sur la compréhension et le partage de valeurs communes.",
-      de: "Ich komme aus London, England, und begeistere mich für Design. Ich glaube, wahre Liebe basiert auf Verständnis und gemeinsamen Werten.",
-      it: "Vengo da Londra, Inghilterra, e amo il design. Credo che il vero amore si basi sulla comprensione e sui valori condivisi.",
-      ru: "Я из Лондона, Англия. Я люблю дизайн. Я верю, что настоящая любовь строится на понимании и общих ценностях.",
-      ar: "أنا من لندن، إنجلترا، وأعشق التصميم. أؤمن بأن الحب الحقيقي يقوم على التفاهم والقيم المشتركة."
+      en: "I'm a creative soul working in new media and PR. I weave stories through digital content, design, and video. I'm looking for a grounded, open-minded partner to share deep conversations and the art of living.",
+      zh: "我是一名新媒体运营兼公关，日常喜欢用图文和视频编织创意故事。我期待遇到一个成熟稳重、思想开明的人，一起分享深度对话，探索生活的艺术。",
+      es: "Soy un alma creativa que trabaja en nuevos medios y relaciones públicas. Tejo historias a través de contenido digital y video. Busco una pareja con los pies en la tierra para compartir conversaciones profundas.",
+      pt: "Sou uma alma criativa trabalhando em novas mídias e RP. Teco histórias através de design e vídeos. Procuro um parceiro maduro e de mente aberta para compartilhar conversas profundas e a arte de viver.",
+      ja: "ニューメディアとPRの仕事をしているクリエイティブな魂です。画像や動画を通じてストーリーを紡ぐのが好きです。深い会話と生活の芸術を共有できる、地に足のついたパートナーを探しています。",
+      ko: "저는 뉴미디어와 PR 분야에서 일하는 크리에이터입니다. 디자인과 영상으로 스토리를 만드는 것을 좋아합니다. 깊은 대화와 삶의 예술을 나눌 수 있는 현실적이고 열린 마음을 가진 파트너를 찾고 있습니다.",
+      fr: "Je suis une âme créative travaillant dans les nouveaux médias et les RP. J'adore créer des histoires visuelles. Je recherche un partenaire mature et ouvert d'esprit pour partager des conversations profondes.",
+      de: "Ich bin eine kreative Seele in den Bereichen Neue Medien und PR. Ich webe Geschichten durch digitales Design und Video. Ich suche einen bodenständigen Partner, um tiefgründige Gespräche zu teilen.",
+      it: "Sono un'anima creativa che lavora nei nuovi media e nelle PR. Creo storie attraverso contenuti digitali e video. Cerco un partner con i piedi per terra per condividere conversazioni profonde.",
+      ru: "Я творческая душа, работаю в сфере новых медиа и PR. Я создаю истории через дизайн и видео. Ищу надежного партнера для глубоких разговоров и совместного наслаждения жизнью.",
+      ar: "أنا روح إبداعية أعمل في الإعلام الجديد والعلاقات العامة. أنسج القصص عبر التصميم والفيديو. أبحث عن شريك واقعي ومنفتح لمشاركة محادثات عميقة وفن العيش."
     },
     tags: {
-      en: ["Ambitious", "Elegant", "Thoughtful", "Discerning"],
-      zh: ["充满野心", "优雅迷人", "体贴周到", "品味不凡"],
-      es: ["Ambiciosa", "Elegante", "Atenta", "Perspicaz"],
-      pt: ["Ambiciosa", "Elegante", "Atenciosa", "Perspicaz"],
-      ja: ["野心的", "エレガント", "思いやりがある", "目の肥えた"],
-      ko: ["야심 찬", "우아한", "사려 깊은", "안목 있는"],
-      fr: ["Ambitieuse", "Élégante", "Attentionnée", "Perspicace"],
-      de: ["Ehrgeizig", "Elegant", "Aufmerksam", "Anspruchsvoll"],
-      it: ["Ambiziosa", "Elegante", "Premurosa", "Esigente"],
-      ru: ["Амбициозная", "Элегантная", "Внимательная", "Разборчивая"],
-      ar: ["طموحة", "أنيقة", "مراعية", "ذواقة"]
+      en: ["Creative", "Trendsetter", "Communicative", "Detail-oriented"],
+      zh: ["创意十足", "审美在线", "善于沟通", "注重细节"],
+      es: ["Creativa", "Innovadora", "Comunicativa", "Detallista"],
+      pt: ["Criativa", "Inovadora", "Comunicativa", "Atenta a detalhes"],
+      ja: ["クリエイティブ", "トレンドセッター", "高いコミュ力", "ディテール重視"],
+      ko: ["크리에이티브", "트렌드세터", "소통능력", "디테일"],
+      fr: ["Créative", "Tendance", "Communicative", "Minutieuse"],
+      de: ["Kreativ", "Trendsetter", "Kommunikativ", "Detailorientiert"],
+      it: ["Creativa", "Innovatrice", "Comunicativa", "Attenta ai dettagli"],
+      ru: ["Творческая", "В тренде", "Коммуникабельная", "Внимательная"],
+      ar: ["مبدعة", "مواكبة للاتجاهات", "تواصل ممتاز", "دقيقة"]
     },
     images: ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg"],
     // 专属号码池
-    whatsappNumbers: ["447526833681"], 
+    whatsappNumbers: ["447999634008"], 
     get whatsappNumber() { 
       return pickRandom(this.whatsappNumbers); 
     }
@@ -113,7 +113,7 @@ export const personaPool = [
       ar: ["حنون", "محترف", "متعاطف", "موثوق"]
     },
     images: ["/images/4.jpg", "/images/5.jpg", "/images/6.jpg"],
-    // 专属号码池，等会您自己填真实的进去
+    // 专属号码池
     whatsappNumbers: ["447935181351"], 
     get whatsappNumber() { 
       return pickRandom(this.whatsappNumbers); 
@@ -171,7 +171,6 @@ export const personaPool = [
       return pickRandom(this.whatsappNumbers); 
     }
   }
-];
 
 // 【极重要】为了兼容 Home.tsx 等旧页面，保留这一行
 export const personaConfig = personaPool[0];
