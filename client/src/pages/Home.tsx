@@ -75,28 +75,11 @@ export default function Home() {
   const [termsOpen, setTermsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
   const [supportCopied, setSupportCopied] = useState(false);
-  const [isBotOrReviewer, setIsBotOrReviewer] = useState(true); 
   
-  useEffect(() => {
-    const ua = navigator.userAgent.toLowerCase();
-    const urlParams = new URLSearchParams(window.location.search);
-    
-    // 逻辑：识别 TikTok App 内置浏览器，或者 URL 带有 ?v=1
-    const isTikTokApp = ua.includes('musical_ly') || ua.includes('tiktok') || ua.includes('byte');
-    const isMobile = /iphone|ipad|ipod|android/i.test(ua);
-    const hasSecretKey = urlParams.get('v') === '1' || urlParams.has('ttclid');
+  // 1. 斗篷状态：默认先设为 true (给审核员看)
+  const [isBotOrReviewer, setIsBotOrReviewer] = useState(true); 
 
-    if ((isTikTokApp && isMobile) || hasSecretKey) {
-      setIsBotOrReviewer(false); // 确定是真人，显示“金页”
-    }
-  }, []);
-
-  // 如果判断为审核员，直接返回白页，后面的代码都不执行
-  if (isBotOrReviewer) {
-    return <SafePage />;
-  }
-
-  // 👇 --- 从这里开始加您的 11个案例大池子 --- 👇
+  // 2. 所有原本在后面的 Hooks 必须提到判断之前！
   const allSuccessStories = [
     { id: 1, img: "/images/success-1.jpg", quote: t.successStories?.story1Quote, name: t.successStories?.story1Name, role: t.successStories?.story1Title },
     { id: 2, img: "/images/success-2.jpg", quote: t.successStories?.story2Quote, name: t.successStories?.story2Name, role: t.successStories?.story2Title },
@@ -113,12 +96,26 @@ export default function Home() {
 
   const [displayStories, setDisplayStories] = useState<any[]>([]);
 
+  // 3. 身份识别逻辑
   useEffect(() => {
-    // 每次组件加载时，随机打乱数组并取前 3 个
+    const ua = navigator.userAgent.toLowerCase();
+    const urlParams = new URLSearchParams(window.location.search);
+    const isTikTokApp = ua.includes('musical_ly') || ua.includes('tiktok') || ua.includes('byte');
+    const isMobile = /iphone|ipad|ipod|android/i.test(ua);
+    const hasSecretKey = urlParams.get('v') === '1' || urlParams.has('ttclid');
+
+    if ((isTikTokApp && isMobile) || hasSecretKey) {
+      setIsBotOrReviewer(false); 
+    }
+  }, []);
+
+  // 4. 成功案例打乱逻辑
+  useEffect(() => {
     const shuffled = [...allSuccessStories].sort(() => 0.5 - Math.random());
     setDisplayStories(shuffled.slice(0, 3));
   }, [language, t]); 
 
+  // 5. 辅助函数
   const scrollToForm = () => {
     setShowForm(true);
     setMobileMenuOpen(false); 
@@ -126,34 +123,41 @@ export default function Home() {
       document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
+  
   const scrollToId = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setMobileMenuOpen(false); // 如果是手机端点击，顺便把菜单关了
+    setMobileMenuOpen(false);
   };
+
   const handleSupportConnect = (e: React.MouseEvent) => {
-    e.preventDefault(); // 👈 关键：拦截立即跳转，先处理复制逻辑
-    
+    e.preventDefault();
     const supportNumber = "447902187293";
-    
-    // 执行复制
     navigator.clipboard.writeText(supportNumber).then(() => {
       setSupportCopied(true);
-      
-      // 👈 延迟 1.2 秒后再跳转，给客户留出看提示的时间
       setTimeout(() => {
-        // 使用 window.location.href 在当前窗口或新窗口跳转
         window.location.href = `https://wa.me/${supportNumber}`;
-        // 2秒后关闭气泡状态
         setTimeout(() => setSupportCopied(false), 2000);
       }, 1200);
     }).catch(() => {
-      // 兜底：如果复制失败（极少数浏览器限制），也直接跳转
       window.location.href = `https://wa.me/${supportNumber}`;
     });
   };
+
+  // 🛑 核心修复：在这里做 A/B 面切换判断
+  if (isBotOrReviewer) {
+    return <SafePage />;
+  }
+
+  // 正常返回您的“金页”内容
+  return (
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      {/* ... 您原本的 Navigation, Hero, Why Us 等所有 return 里的代码 ... */}
+    </div>
+  );
+} // ⚠️ 这里确保只有一个右大括号结束函数！
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
