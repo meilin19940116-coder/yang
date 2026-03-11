@@ -9,7 +9,7 @@
 export const translations = {
   en: {
     nav: { home: "Home", about: "About", howItWorks: "How it Works", stories: "Stories", faq: "FAQ", apply: "Apply Now" },
-    hero: { title: "Meet Your Perfect Match", subtitle: "Exclusive matchmaking for discerning individuals seeking meaningful connections", cta: "Begin Your Journey" },
+    hero: { title: "Meet Your Perfect Match", subtitle: "Exclusive matchmaking services for those seeking genuine emotional connections", cta: "Begin Your Journey" },
     whyUs: { title: "Why Choose Synchro", subtitle: "We understand that finding true love requires more than algorithms", feature1Title: "Rigorous Screening", feature1Desc: "Every member is carefully vetted to ensure quality and authenticity", feature2Title: "Privacy Encrypted", feature2Desc: "Your information is protected with bank-level security standards", feature3Title: "Precision Matching", feature3Desc: "Our expert matchmakers curate connections based on deep compatibility" },
     howItWorks: { title: "Your Journey to Love", subtitle: "Three simple steps to finding your soulmate", step1Title: "Complete Your Profile", step1Desc: "Share your story, values, and what you're looking for in a partner", step2Title: "Expert Review", step2Desc: "Our team carefully reviews your application to ensure the best matches", step3Title: "Meet Your Match", step3Desc: "Connect with someone who truly understands and complements you" },
     trust: { title: "Trusted by Professionals Worldwide", badge1: "Security Certified", badge2: "Privacy Protected", badge3: "Expert Verified" },
@@ -42,7 +42,7 @@ export const translations = {
     },
     form: { 
       title: "Begin Your Journey", 
-      subtitle: "Tell us about yourself", 
+      subtitle: "Complete your profile to find your match", 
       step1Title: "Basic Information", 
       nameLabel: "Full Name", 
       namePlaceholder: "Enter your full name", 
@@ -141,7 +141,7 @@ export const translations = {
   },
   zh: {
     nav: { home: "首页", about: "关于我们", howItWorks: "如何运作", stories: "成功案例", faq: "常见问题", apply: "立即申请" },
-    hero: { title: "遇见懂你的那个TA", subtitle: "为追求真挚情感的精英人士提供专属相亲引荐服务", cta: "开启你的旅程" },
+    hero: { title: "遇见懂你的那个TA", subtitle: "为追求真挚情感的人士提供专属相亲引荐服务", cta: "开启你的旅程" },
     whyUs: { title: "为什么选择 Synchro", subtitle: "我们深知,寻找真爱需要的不仅仅是算法", feature1Title: "严格筛选", feature1Desc: "每位会员都经过仔细审核,确保质量和真实性", feature2Title: "隐私加密", feature2Desc: "您的信息受到银行级安全标准的保护", feature3Title: "精准匹配", feature3Desc: "我们的专业红娘基于深度契合度为您精心挑选" },
     howItWorks: { title: "你的爱情之旅", subtitle: "三个简单步骤,找到你的灵魂伴侣", step1Title: "完善你的资料", step1Desc: "分享你的故事、价值观以及你对伴侣的期待", step2Title: "专家审核", step2Desc: "我们的团队会仔细审核你的申请,确保最佳匹配", step3Title: "遇见你的另一半", step3Desc: "与真正理解你、与你互补的人建立联系" },
     trust: { title: "深受全球专业人士信赖", badge1: "安全认证", badge2: "隐私保护", badge3: "专家验证" },
@@ -174,7 +174,7 @@ export const translations = {
     },
     form: { 
       title: "开启你的旅程", 
-      subtitle: "告诉我们关于你的信息", 
+      subtitle: "填写资料找到适合你的人选", 
       step1Title: "基本信息", 
       nameLabel: "姓名", 
       namePlaceholder: "请输入你的姓名", 
@@ -273,7 +273,7 @@ export const translations = {
   },
   es: {
     nav: { home: "Inicio", about: "Nosotros", howItWorks: "Cómo funciona", stories: "Historias", faq: "FAQ", apply: "Aplicar" },
-    hero: { title: "Encuentra Tu Pareja Perfecta", subtitle: "Emparejamiento exclusivo para personas exigentes que buscan conexiones significativas", cta: "Comienza Tu Viaje" },
+    hero: { title: "Encuentra Tu Pareja Perfecta", subtitle: "Servicios exclusivos de intermediación para personas en busca de vínculos afectivos sinceros", cta: "Comienza Tu Viaje" },
     whyUs: { title: "Por Qué Elegir Synchro", subtitle: "Entendemos que encontrar el amor verdadero requiere más que algoritmos", feature1Title: "Selección Rigurosa", feature1Desc: "Cada miembro es cuidadosamente verificado para garantizar calidad y autenticidad", feature2Title: "Privacidad Encriptada", feature2Desc: "Tu información está protegida con estándares de seguridad bancaria", feature3Title: "Emparejamiento Preciso", feature3Desc: "Nuestros expertos crean conexiones basadas en compatibilidad profunda" },
     howItWorks: { title: "Tu Viaje Hacia el Amor", subtitle: "Tres pasos simples para encontrar tu alma gemela", step1Title: "Completa Tu Perfil", step1Desc: "Comparte tu historia, valores y lo que buscas en una pareja", step2Title: "Revisión Experta", step2Desc: "Nuestro equipo revisa cuidadosamente tu solicitud para asegurar las mejores coincidencias", step3Title: "Conoce Tu Pareja", step3Desc: "Conéctate con alguien que realmente te entienda y complemente" },
     trust: { title: "Confiado por Profesionales en Todo el Mundo", badge1: "Certificado de Seguridad", badge2: "Privacidad Protegida", badge3: "Verificado por Expertos" },
@@ -306,7 +306,7 @@ export const translations = {
     },
     form: { 
       title: "Comienza Tu Viaje", 
-      subtitle: "Cuéntanos sobre ti", 
+      subtitle: "Completa tu perfil y encuentra a tu pareja ideal", 
       step1Title: "Información Básica", 
       nameLabel: "Nombre Completo", 
       namePlaceholder: "Ingresa tu nombre completo", 
@@ -404,7 +404,7 @@ export const translations = {
   },
   pt: {
     nav: { home: "Início", about: "Sobre", howItWorks: "Como funciona", stories: "Histórias", faq: "FAQ", apply: "Candidatar" },
-    hero: { title: "Encontre Seu Par Perfeito", subtitle: "Matchmaking exclusivo para indivíduos exigentes que buscam conexões significativas", cta: "Comece Sua Jornada" },
+    hero: { title: "Encontre Seu Par Perfeito", subtitle: "Serviços exclusivos de matchmaking para pessoas que procuram conexões emocionais genuínas", cta: "Comece Sua Jornada" },
     whyUs: { title: "Por Que Escolher Synchro", subtitle: "Entendemos que encontrar o amor verdadeiro requer mais do que algoritmos", feature1Title: "Triagem Rigorosa", feature1Desc: "Cada membro é cuidadosamente verificado para garantir qualidade e autenticidade", feature2Title: "Privacidade Criptografada", feature2Desc: "Suas informações são protegidas com padrões de segurança bancária", feature3Title: "Correspondência Precisa", feature3Desc: "Nossos matchmakers especialistas criam conexões baseadas em compatibilidade profunda" },
     howItWorks: { title: "Sua Jornada Para o Amor", subtitle: "Três passos simples para encontrar sua alma gêmea", step1Title: "Complete Seu Perfil", step1Desc: "Compartilhe sua história, valores e o que você procura em um parceiro", step2Title: "Revisão Especializada", step2Desc: "Nossa equipe revisa cuidadosamente sua aplicação para garantir as melhores correspondências", step3Title: "Conceça Seu Par", step3Desc: "Conecte-se com alguém que realmente entende e complementa você" },
     trust: { title: "Confiado por Profissionais em Todo o Mundo", badge1: "Certificado de Segurança", badge2: "Privacidade Protegida", badge3: "Verificado por Especialistas" },
@@ -437,7 +437,7 @@ export const translations = {
     },
     form: { 
       title: "Comece Sua Jornada", 
-      subtitle: "Conte-nos sobre você", 
+      subtitle: "Preencha seu perfil e encontre seu par ideal", 
       step1Title: "Informações Básicas", 
       nameLabel: "Nome Completo", 
       namePlaceholder: "Digite seu nome completo", 
@@ -535,7 +535,7 @@ export const translations = {
   },
   ja: {
     nav: { home: "ホーム", about: "私たちについて", howItWorks: "仕組み", stories: "成功事例", faq: "よくある質問", apply: "今すぐ申請" },
-    hero: { title: "完璧なパートナーに出会う", subtitle: "有意義なつながりを求める目の肥えた方々のための独占的なマッチメイキング", cta: "あなたの旅を始める" },
+    hero: { title: "完璧なパートナーに出会う", subtitle: "真心のこもった出会いを求める方へ、上質なプロデュースによる会員制お見合い紹介サービス", cta: "あなたの旅を始める" },
     whyUs: { title: "Synchroを選ぶ理由", subtitle: "真の愛を見つけるにはアルゴリズム以上のものが必要だと理解しています", feature1Title: "厳格な審査", feature1Desc: "すべてのメンバーは品質と真正性を確保するために慎重に審査されます", feature2Title: "プライバシー暗号化", feature2Desc: "あなたの情報は銀行レベルのセキュリティ基準で保護されています", feature3Title: "精密なマッチング", feature3Desc: "専門のマッチメーカーが深い互換性に基づいて接続を作成します" },
     howItWorks: { title: "愛への旅", subtitle: "ソウルメイトを見つけるための3つの簡単なステップ", step1Title: "プロフィールを完成させる", step1Desc: "あなたのストーリー、価値観、パートナーに求めるものを共有してください", step2Title: "専門家によるレビュー", step2Desc: "私たちのチームはあなたの申請を慎重にレビューし、最高のマッチを確保します", step3Title: "あなたのマッチに会う", step3Desc: "あなたを本当に理解し、補完する人とつながる" },
     trust: { title: "世界中の専門家に信頼されています", badge1: "セキュリティ認証", badge2: "プライバシー保護", badge3: "専門家による検証" },
@@ -568,7 +568,7 @@ export const translations = {
     },
     form: { 
       title: "あなたの旅を始める", 
-      subtitle: "あなた自身について教えてください", 
+      subtitle: "プロフィール入力で、理想の相手を見つける", 
       step1Title: "基本情報", 
       nameLabel: "氏名", 
       namePlaceholder: "氏名を入力してください", 
@@ -667,7 +667,7 @@ export const translations = {
   },
   ko: {
     nav: { home: "홈", about: "회사 소개", howItWorks: "작동 방식", stories: "성공 사례", faq: "FAQ", apply: "신청하기" },
-    hero: { title: "완벽한 파트너를 만나세요", subtitle: "의미 있는 연결을 추구하는 안목 있는 개인을 위한 독점 매칭", cta: "여정 시작하기" },
+    hero: { title: "완벽한 파트너를 만나세요", subtitle: "진정성 있는 감정적 교감을 추구하는 분들을 위한 프라이빗 맞춤형 맞선 소개 서비스", cta: "여정 시작하기" },
     whyUs: { title: "Synchro를 선택하는 이유", subtitle: "진정한 사랑을 찾는 데는 알고리즘 이상의 것이 필요하다는 것을 이해합니다", feature1Title: "엄격한 심사", feature1Desc: "모든 회원은 품질과 진정성을 보장하기 위해 신중하게 검증됩니다", feature2Title: "개인정보 암호화", feature2Desc: "귀하의 정보는 은행 수준의 보안 표준으로 보호됩니다", feature3Title: "정밀한 매칭", feature3Desc: "전문 매치메이커가 깊은 호환성을 기반으로 연결을 만듭니다" },
     howItWorks: { title: "사랑으로의 여정", subtitle: "소울메이트를 찾기 위한 세 가지 간단한 단계", step1Title: "프로필 완성", step1Desc: "당신의 이야기, 가치관, 파트너에게 찾는 것을 공유하세요", step2Title: "전문가 검토", step2Desc: "우리 팀은 최고의 매치를 보장하기 위해 신청서를 신중하게 검토합니다", step3Title: "매치 만나기", step3Desc: "당신을 진정으로 이해하고 보완하는 사람과 연결하세요" },
     trust: { title: "전 세계 전문가들의 신뢰", badge1: "보안 인증", badge2: "개인정보 보호", badge3: "전문가 검증" },
@@ -700,7 +700,7 @@ export const translations = {
     },
     form: { 
       title: "여정 시작하기", 
-      subtitle: "당신에 대해 알려주세요", 
+      subtitle: "프로필을 입력하고 딱 맞는 인연을 만나보세요", 
       step1Title: "기본 정보", 
       nameLabel: "이름", 
       namePlaceholder: "이름을 입력하세요", 
@@ -799,7 +799,7 @@ export const translations = {
   },
   fr: {
     nav: { home: "Accueil", about: "À propos", howItWorks: "Comment ça marche", stories: "Histoires", faq: "FAQ", apply: "Postuler" },
-    hero: { title: "Rencontrez Votre Partenaire Idéal", subtitle: "Matchmaking exclusif pour les personnes exigeantes à la recherche de connexions significatives", cta: "Commencez Votre Voyage" },
+    hero: { title: "Rencontrez Votre Partenaire Idéal", subtitle: "Services exclusifs de mise en relation pour ceux qui recherchent une connexion émotionnelle sincère", cta: "Commencez Votre Voyage" },
     whyUs: { title: "Pourquoi Choisir Synchro", subtitle: "Nous comprenons que trouver le véritable amour nécessite plus que des algorithmes", feature1Title: "Sélection Rigoureuse", feature1Desc: "Chaque membre est soigneusement vérificado pour garantir la qualité et l'authenticité", feature2Title: "Confidentialité Cryptée", feature2Desc: "Vos informations sont protégées par des normes de sécurité bancaire", feature3Title: "Correspondance Précise", feature3Desc: "Nos experts en matchmaking créent des connexions basées sur une compatibilité profonde" },
     howItWorks: { title: "Votre Voyage Vers l'Amour", subtitle: "Trois étapes simples pour trouver votre âme sœur", step1Title: "Complétez Votre Profil", step1Desc: "Partagez votre histoire, vos valeurs et ce que vous recherchez chez un partenaire", step2Title: "Examen d'Expert", step2Desc: "Notre équipe examine attentivement votre candidature pour garantir les meilleures correspondances", step3Title: "Rencontrez Votre Partenaire", step3Desc: "Connectez-vous avec quelqu'un qui vous comprend vraiment et vous complète" },
     trust: { title: "Fait Confiance par des Professionnels du Monde Entier", badge1: "Certifié Sécurité", badge2: "Confidentialité Protégée", badge3: "Vérifié par des Experts" },
@@ -832,7 +832,7 @@ export const translations = {
     },
     form: { 
       title: "Commencez Votre Voyage", 
-      subtitle: "Parlez-nous de vous", 
+      subtitle: "Complétez votre profil pour trouver l'âme sœur", 
       step1Title: "Informations de Base", 
       nameLabel: "Nom Complet", 
       namePlaceholder: "Entrez votre nom complet", 
@@ -931,7 +931,7 @@ export const translations = {
   },
   de: {
     nav: { home: "Startseite", about: "Über uns", howItWorks: "Wie es funktioniert", stories: "Geschichten", faq: "FAQ", apply: "Anmelden" },
-    hero: { title: "Treffen Sie Ihren Perfekten Partner", subtitle: "Exklusives Matchmaking für anspruchsvolle Menschen, die nach bedeutungsvollen Verbindungen suchen", cta: "Beginnen Sie Ihre Reise" },
+    hero: { title: "Treffen Sie Ihren Perfekten Partner", subtitle: "Exklusive Partnervermittlung für Menschen, die nach aufrichtigen emotionalen Bindungen suchen", cta: "Beginnen Sie Ihre Reise" },
     whyUs: { title: "Warum Synchro Wählen", subtitle: "Wir verstehen, dass wahre Liebe mehr als Algorithmen erfordert", feature1Title: "Strenge Prüfung", feature1Desc: "Jedes Mitglied wird sorgfältig überprüft, um Qualität und Authentizität zu gewährleisten", feature2Title: "Datenschutz Verschlüsselt", feature2Desc: "Ihre Informationen sind durch bankenübliche Sicherheitsstandards geschützt", feature3Title: "Präzises Matching", feature3Desc: "Unsere Experten-Matchmaker schaffen Verbindungen basierend auf tiefer Kompatibilität" },
     howItWorks: { title: "Ihre Reise Zur Liebe", subtitle: "Drei einfache Schritte, um Ihre Seelenverwandte zu finden", step1Title: "Vervollständigen Sie Ihr Profil", step1Desc: "Teilen Sie Ihre Geschichte, Werte und what Sie bei einem Partner suchen", step2Title: "Expertenprüfung", step2Desc: "Unser Team prüft Ihre Bewerbung sorgfältig, um die besten Übereinstimmungen zu gewährleisten", step3Title: "Treffen Sie Ihren Partner", step3Desc: "Verbinden Sie sich mit jemandem, der Sie wirklich versteht und ergänzt" },
     trust: { title: "Vertraut von Fachleuten Weltweit", badge1: "Sicherheitszertifiziert", badge2: "Datenschutz Geschützt", badge3: "Expertengeprüft" },
@@ -964,7 +964,7 @@ export const translations = {
     },
     form: { 
       title: "Beginnen Sie Ihre Reise", 
-      subtitle: "Erzählen Sie uns von sich", 
+      subtitle: "Profil ausfüllen und passenden Partner finden", 
       step1Title: "Grundinformationen", 
       nameLabel: "Vollständiger Name", 
       namePlaceholder: "Geben Sie Ihren vollständigen Namen ein", 
@@ -1063,7 +1063,7 @@ export const translations = {
   },
   it: {
     nav: { home: "Home", about: "Chi siamo", howItWorks: "Come funziona", stories: "Storie", faq: "FAQ", apply: "Candidati" },
-    hero: { title: "Incontra Il Tuo Partner Perfetto", subtitle: "Matchmaking esclusivo per individui esigenti alla ricerca di connessioni significative", cta: "Inizia Il Tuo Viaggio" },
+    hero: { title: "Incontra Il Tuo Partner Perfetto", subtitle: "Servizi esclusivi di matchmaking per chi desidera legami affettivi autentici", cta: "Inizia Il Tuo Viaggio" },
     whyUs: { title: "Perché Scegliere Synchro", subtitle: "Capiamo che trovare il vero amore richiede più di algoritmi", feature1Title: "Selezione Rigorosa", feature1Desc: "Ogni membro è attentamente verificato per garantire qualità e autenticidade", feature2Title: "Privacy Crittografata", feature2Desc: "Le tue informazioni sono protette con standard di sicurezza bancaria", feature3Title: "Abbinamento Preciso", feature3Desc: "I nostri esperti matchmaker creano connessioni basate su compatibilidade profonda" },
     howItWorks: { title: "Il Tuo Viaggio Verso L'Amore", subtitle: "Tre semplici passi per trovare la tua anima gemella", step1Title: "Completa Il Tuo Profilo", step1Desc: "Condividi la tua storia, i tuoi valori e cosa cerchi in un partner", step2Title: "Revisione Esperta", step2Desc: "Il nostro team esamina attentamente la tua candidatura per garantire le migliori corrispondenze", step3Title: "Incontra Il Tuo Partner", step3Desc: "Connettiti con qualcuno che ti capisce davvero e ti completa" },
     trust: { title: "Fidato da Professionisti in Tutto il Mondo", badge1: "Certificato di Sicurezza", badge2: "Privacy Protetta", badge3: "Verificato da Esperti" },
@@ -1096,7 +1096,7 @@ export const translations = {
     },
     form: { 
       title: "Inizia Il Tuo Viaggio", 
-      subtitle: "Parlaci di te", 
+      subtitle: "Completa il profilo e trova l'anima gemella", 
       step1Title: "Informazioni di Base", 
       nameLabel: "Nome Completo", 
       namePlaceholder: "Inserisci il tuo nome completo", 
@@ -1195,7 +1195,7 @@ export const translations = {
   },
   ru: {
     nav: { home: "Главная", about: "О нас", howItWorks: "Как это работает", stories: "Истории", faq: "FAQ", apply: "Подать заявку" },
-    hero: { title: "Встретьте Своего Идеального Партнера", subtitle: "Эксклюзивный подбор пар для взыскательных людей, ищущих значимые связи", cta: "Начните Свое Путешествие" },
+    hero: { title: "Встретьте Своего Идеального Партнера", subtitle: "Эксклюзивные услуги по подбору партнеров для тех, кто ищет искренние эмоциональные отношения", cta: "Начните Свое Путешествие" },
     whyUs: { title: "Почему Synchro", subtitle: "Мы понимаем, что найти настоящую любовь требует больше, чем алгоритмы", feature1Title: "Строгий Отбор", feature1Desc: "Каждый участник тщательно проверяется для обеспечения качества и подлинности", feature2Title: "Конфиденциальность Зашифрована", feature2Desc: "Ваша информация защищена банковскими стандартами безопасности", feature3Title: "Точный Подбор", feature3Desc: "Наши эксперты по подбору пар создают связи на основе глубокой совместимости" },
     howItWorks: { title: "Ваше Путешествие К Любви", subtitle: "Три простых шага к поиску родственной души", step1Title: "Заполните Свой Профиль", step1Desc: "Поделитесь своей историей, ценностями и тем, что вы ищете в партнере", step2Title: "Экспертная Проверка", step2Desc: "Наша команда тщательно проверяет вашу заявку, чтобы обеспечить лучшие совпадения", step3Title: "Встретьте Своего Партнера", step3Desc: "Свяжитесь с кем-то, кто действительно понимает и дополняет вас" },
     trust: { title: "Доверяют Профессионалы По Всему Миру", badge1: "Сертифицирована Безопасность", badge2: "Защищена Конфиденциальность", badge3: "Проверено Экспертами" },
@@ -1228,7 +1228,7 @@ export const translations = {
     },
     form: { 
       title: "Начните Свое Путешествие", 
-      subtitle: "Расскажите нам о себе", 
+      subtitle: "Заполните анкету, чтобы найти свою пару", 
       step1Title: "Основная Информация", 
       nameLabel: "Полное Имя", 
       namePlaceholder: "Введите ваше полное имя", 
@@ -1327,7 +1327,7 @@ export const translations = {
   },
   ar: {
     nav: { home: "الرئيسية", about: "من نحن", howItWorks: "كيف يعمل", stories: "القصص", faq: "الأسئلة الشائعة", apply: "قدم الآن" },
-    hero: { title: "قابل شريكك المثالي", subtitle: "خدمة تطابق حصرية للأفراد المميزين الباحثين عن علاقات ذات معنى", cta: "ابدأ رحلتك" },
+    hero: { title: "قابل شريكك المثالي", subtitle: "خدمات وساطة حصرية لمن يبحثون عن روابط عاطفية صادقة", cta: "ابدأ رحلتك" },
     whyUs: { title: "لماذا تختار Synchro", subtitle: "نحن ندرك أن إيجاد الحب الحقيقي يتطلب أكثر من مجرد خوارزميات", feature1Title: "فحص صارم", feature1Desc: "يتم فحص كل عضو بعناية لضمان الجودة والأصالة", feature2Title: "خصوصية مشفرة", feature2Desc: "معلوماتك محمية بمعايير أمان مصرفية", feature3Title: "تطابق دقيق", feature3Desc: "خبراؤنا في التطابق يخلقون اتصالات بناءً على التوافق العميق" },
     howItWorks: { title: "رحلتك نحو الحب", subtitle: "ثلاث خطوات بسيطة للعثور على توأم روحك", step1Title: "أكمل ملفك الشخصي", step1Desc: "شارك قصتك وقيمك وما تبحث عنه في شريك", step2Title: "مراجعة الخبراء", step2Desc: "يقوم فريقنا بمراجعة طلبك بعناية لضمان أفضل التطابقات", step3Title: "قابل شريكك", step3Desc: "تواصل مع شخص يفهمك حقًا ويكملك" },
     trust: { title: "موثوق به من قبل المحترفين في جميع أنحاء العالم", badge1: "معتمد أمنيًا", badge2: "خصوصية محمية", badge3: "تم التحقق من قبل الخبراء" },
@@ -1360,7 +1360,7 @@ export const translations = {
     },
     form: { 
       title: "ابدأ رحلتك", 
-      subtitle: "أخبرنا عن نفسك", 
+      subtitle: "أكمل بياناتك للعثور على شريكك المناسب", 
       step1Title: "معلومات أساسية", 
       nameLabel: "الاسم الكامل", 
       namePlaceholder: "أدخل اسمك الكامل", 
